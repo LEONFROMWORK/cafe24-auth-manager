@@ -320,7 +320,8 @@ def test_api():
     headers = {
         'Authorization': f"Bearer {token['access_token']}",
         'Content-Type': 'application/json',
-        'X-Cafe24-Api-Version': '2024-03-01'
+        'X-Cafe24-Api-Version': '2024-03-01',
+        'X-Cafe24-Mall-Id': config['shop_id']
     }
 
     try:
