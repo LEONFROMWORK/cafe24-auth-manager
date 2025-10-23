@@ -1,0 +1,19 @@
+{
+  "category": "shipments",
+  "api_type": "admin",
+  "endpoint_count": 2,
+  "endpoints": [
+    {
+      "method": "POST",
+      "path": "/api/v2/admin/shipments",
+      "summary": "Shipments 생성",
+      "description": "배송(Shipments)은 주문의 하위리소스로 주문의 배송 정보를 한번에 등록하거나 수정할 수 있습니다."
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/admin/shipments",
+      "summary": "Shipments 수정",
+      "description": "배송(Shipments)은 주문의 하위리소스로 주문의 배송 정보를 한번에 등록하거나 수정할 수 있습니다."
+    }
+  ]
+}

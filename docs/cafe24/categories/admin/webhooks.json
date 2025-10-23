@@ -1,0 +1,25 @@
+{
+  "category": "webhooks",
+  "api_type": "admin",
+  "endpoint_count": 3,
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/webhooks/logs",
+      "summary": "Webhooks logs",
+      "description": "웹훅 로그(Webhooks logs)를 통해 앱에서 발생한 웹훅의 로그를 조회할 수 있습니다."
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/webhooks/setting",
+      "summary": "Webhooks setting",
+      "description": "쇼핑몰이 웹훅 사용이 동의된 실시간 조회 정보 관련 동의에 대해 조회할 수 있습니다."
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/admin/webhooks/setting",
+      "summary": "Webhooks setting",
+      "description": "쇼핑몰이 웹훅 사용이 동의된 실시간 조회 정보 관련 동의에 대해 조회할 수 있습니다."
+    }
+  ]
+}

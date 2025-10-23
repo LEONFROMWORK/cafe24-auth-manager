@@ -1,0 +1,13 @@
+{
+  "category": "origin",
+  "api_type": "admin",
+  "endpoint_count": 1,
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/origin",
+      "summary": "Retrieve origin information",
+      "description": "원산지 정보를 조회합니다."
+    }
+  ]
+}

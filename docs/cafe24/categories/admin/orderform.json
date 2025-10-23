@@ -1,0 +1,49 @@
+{
+  "category": "orderform",
+  "api_type": "admin",
+  "endpoint_count": 6,
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/orderform/setting",
+      "summary": "Orderform setting 조회",
+      "description": "주문서 입력항목을 조회할 수 있습니다."
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/admin/orderform/setting",
+      "summary": "Orderform setting 수정",
+      "description": "주문서 입력항목을 수정할 수 있습니다."
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/orderform/properties",
+      "summary": "주문서 속성 조회",
+      "description": "주문서의 속성을 조회하는 기능입니다."
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/admin/orderform/properties",
+      "summary": "",
+      "description": "",
+      "parameters": [],
+      "responses": {}
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/admin/orderform/properties/{orderform_property_id}",
+      "summary": "",
+      "description": "",
+      "parameters": [],
+      "responses": {}
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/v2/admin/orderform/properties/{orderform_property_id}",
+      "summary": "",
+      "description": "",
+      "parameters": [],
+      "responses": {}
+    }
+  ]
+}

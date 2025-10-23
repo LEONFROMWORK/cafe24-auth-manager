@@ -1,0 +1,13 @@
+{
+  "category": "taxmanager",
+  "api_type": "admin",
+  "endpoint_count": 1,
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/taxmanager",
+      "summary": "Taxmanager",
+      "description": "세금 관리자(MSA)의 활성화 정보 관련 기능입니다."
+    }
+  ]
+}

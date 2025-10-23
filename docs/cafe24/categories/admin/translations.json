@@ -1,0 +1,61 @@
+{
+  "category": "translations",
+  "api_type": "admin",
+  "endpoint_count": 9,
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/translations/categories",
+      "summary": "Translations categories",
+      "description": "상품 분류 번역 정보(Translations categories)는, 상품 분류의 번역 정보를 조회하거나 수정할 수 있는 기능입니다."
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/admin/translations/categories/{category_no}",
+      "summary": "Translations categories",
+      "description": "상품 분류 번역 정보(Translations categories)는, 상품 분류의 번역 정보를 조회하거나 수정할 수 있는 기능입니다."
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/translations/products",
+      "summary": "Translations products",
+      "description": "상품 번역 정보(Translations products)는, 상품의 번역 정보를 조회하거나 수정할 수 있는 기능입니다."
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/admin/translations/products/{product_no}",
+      "summary": "Translations products",
+      "description": "상품 번역 정보(Translations products)는, 상품의 번역 정보를 조회하거나 수정할 수 있는 기능입니다."
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/translations/store",
+      "summary": "Translations store",
+      "description": ""
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/admin/translations/store",
+      "summary": "Translations store",
+      "description": "상점 번역 정보(Translations store)는 상점의 번역 정보를 조회하거나 수정할 수 있는 기능입니다."
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/translations/themes",
+      "summary": "Translations themes",
+      "description": "테마 번역 정보(Translations themes)는 다국어 코드화된 디자인 스킨에 담겨진 번역 정보를 조회하거나 수정할 수 있는 기능입니다."
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/translations/themes/{skin_no}",
+      "summary": "Translations themes",
+      "description": "테마 번역 정보(Translations themes)는 다국어 코드화된 디자인 스킨에 담겨진 번역 정보를 조회하거나 수정할 수 있는 기능입니다."
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/admin/translations/themes/{skin_no}",
+      "summary": "Translations themes",
+      "description": "테마 번역 정보(Translations themes)는 다국어 코드화된 디자인 스킨에 담겨진 번역 정보를 조회하거나 수정할 수 있는 기능입니다."
+    }
+  ]
+}

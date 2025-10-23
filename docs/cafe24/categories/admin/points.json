@@ -1,0 +1,55 @@
+{
+  "category": "points",
+  "api_type": "admin",
+  "endpoint_count": 8,
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/points/setting",
+      "summary": "Retrieve points settings",
+      "description": "적립금 설정(Points setting)은 적립금 사용에 필요한 설정값을 관리하기 위한 기능입니다."
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/admin/points/setting",
+      "summary": "Update points settings",
+      "description": "적립금 설정(Points setting)은 적립금 사용에 필요한 설정값을 관리하기 위한 기능입니다."
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/points",
+      "summary": "Points",
+      "description": "적립금(Points)은 쇼핑몰 회원의 적립금의 조회, 통계, 차감을 할 수 있는 기능입니다."
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/admin/points",
+      "summary": "Points",
+      "description": "적립금(Points)은 쇼핑몰 회원의 적립금의 조회, 통계, 차감을 할 수 있는 기능입니다."
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/points/autoexpiration",
+      "summary": "Retrieve an automatic points expiration",
+      "description": "포인트 자동만료(Points autoexpiration)는 포인트를 자동으로 만료시키는 것과 관련된 기능입니다. 자동만료 설정을 조회하거나 등록 및 삭제가 가능합니다."
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/admin/points/autoexpiration",
+      "summary": "Create an automatic points expiration",
+      "description": "포인트 자동만료(Points autoexpiration)는 포인트를 자동으로 만료시키는 것과 관련된 기능입니다. 자동만료 설정을 조회하거나 등록 및 삭제가 가능합니다."
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/v2/admin/points/autoexpiration",
+      "summary": "Delete an automatic points expiration",
+      "description": "포인트 자동만료(Points autoexpiration)는 포인트를 자동으로 만료시키는 것과 관련된 기능입니다. 자동만료 설정을 조회하거나 등록 및 삭제가 가능합니다."
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/points/report",
+      "summary": "Points report",
+      "description": "적립금 통계(Points report)는 지정한 기간동안의 가용적립금의 증감 내역, 미가용 적립금의 총액 등 적립금과 관련된 통계를 조회할 수 있는 리소스입니다."
+    }
+  ]
+}

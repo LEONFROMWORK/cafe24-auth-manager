@@ -1,0 +1,37 @@
+{
+  "category": "bundleproducts",
+  "api_type": "admin",
+  "endpoint_count": 5,
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/bundleproducts",
+      "summary": "Bundleproducts",
+      "description": "번들 상품 목록을 조회합니다."
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/bundleproducts/{product_no}",
+      "summary": "Bundleproduct Details",
+      "description": "특정 번들 상품의 상세 정보를 조회합니다."
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/admin/bundleproducts",
+      "summary": "Create Bundleproduct",
+      "description": "새로운 번들 상품을 생성합니다."
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/admin/bundleproducts/{product_no}",
+      "summary": "Update Bundleproduct",
+      "description": "기존 번들 상품을 수정합니다."
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/v2/admin/bundleproducts/{product_no}",
+      "summary": "Delete Bundleproduct",
+      "description": "기존 번들 상품을 삭제합니다."
+    }
+  ]
+}

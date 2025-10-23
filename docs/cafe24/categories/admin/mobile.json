@@ -1,0 +1,19 @@
+{
+  "category": "mobile",
+  "api_type": "admin",
+  "endpoint_count": 2,
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/mobile/setting",
+      "summary": "Mobile setting 조회",
+      "description": "쇼핑몰의 모바일 쇼핑몰 설정에 관한 리스트입니다."
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/admin/mobile/setting",
+      "summary": "Mobile setting 수정",
+      "description": "쇼핑몰의 모바일 쇼핑몰 설정에 관한 리스트입니다."
+    }
+  ]
+}

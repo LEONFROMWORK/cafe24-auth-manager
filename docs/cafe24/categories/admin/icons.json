@@ -1,0 +1,13 @@
+{
+  "category": "icons",
+  "api_type": "admin",
+  "endpoint_count": 1,
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/icons",
+      "summary": "Retrieve icons",
+      "description": "디자인 아이콘을 조회합니다."
+    }
+  ]
+}

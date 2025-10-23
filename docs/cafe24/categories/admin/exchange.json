@@ -1,0 +1,25 @@
+{
+  "category": "exchange",
+  "api_type": "admin",
+  "endpoint_count": 3,
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/exchange/{claim_code}",
+      "summary": "Exchange 조회",
+      "description": "교환(Exchange)은 주문의 교환 접수 상태를 변경하는 리소스입니다."
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/admin/exchange",
+      "summary": "Exchange 생성",
+      "description": "교환 접수를 할 수 있으며 교환이 접수된 주문의 상태를 수정할 수 있습니다."
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/admin/exchange",
+      "summary": "Exchange 수정",
+      "description": "교환 접수를 할 수 있으며 교환이 접수된 주문의 상태를 수정할 수 있습니다."
+    }
+  ]
+}

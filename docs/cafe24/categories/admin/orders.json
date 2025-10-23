@@ -1,0 +1,468 @@
+{
+  "category": "orders",
+  "api_type": "admin",
+  "endpoint_count": 70,
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/orders/setting",
+      "summary": "Orders setting 조회",
+      "description": "주문 설정에 대해 조회할 수 있는 기능입니다."
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/admin/orders/setting",
+      "summary": "Orders setting 수정",
+      "description": "주문 설정에 대해 수정할 수 있는 기능입니다."
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/orders/status",
+      "summary": "Orders status",
+      "description": "쇼핑몰에서 사용하는 주문상태 유형 및 표기를 관리할 수 있습니다"
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/admin/orders/status",
+      "summary": "Orders status",
+      "description": "쇼핑몰에서 사용하는 주문상태 유형 및 표기를 관리할 수 있습니다"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/orders",
+      "summary": "",
+      "description": "",
+      "parameters": [],
+      "responses": {}
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/orders/{order_id}",
+      "summary": "",
+      "description": "",
+      "parameters": [],
+      "responses": {}
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/orders/count",
+      "summary": "",
+      "description": "",
+      "parameters": [],
+      "responses": {}
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/admin/orders",
+      "summary": "",
+      "description": "",
+      "parameters": [],
+      "responses": {}
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/admin/orders/{order_id}",
+      "summary": "",
+      "description": "",
+      "parameters": [],
+      "responses": {}
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/v2/admin/orders/{order_id}/autocalculation",
+      "summary": "Remove auto calculation setting of a specific order",
+      "description": null,
+      "parameters": [],
+      "responses": {}
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/orders/{order_id}/buyer",
+      "summary": "Orders buyer",
+      "description": "주문자(Buyer)는 쇼핑몰의 상품을 주문한 사람을 나타냅니다.",
+      "parameters": [],
+      "responses": {}
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/admin/orders/{order_id}/buyer",
+      "summary": "Update order buyer information",
+      "description": "특정 주문의 주문자 정보(이름, 주소, 전화번호, 이메일 등)를 수정할 수 있습니다.",
+      "parameters": [],
+      "responses": {}
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/orders/{order_id}/buyer/history",
+      "summary": "Orders buyer history",
+      "description": "주문자 수정 이력(Buyer History)은 특정 주문의 주문자 정보가 수정된 이력을 나타냅니다."
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/admin/orders/{order_id}/cancellation",
+      "summary": "Orders cancellation",
+      "description": "주문 취소(Orders cancellation)는 배송 전인 특정 주문 하나를 취소 처리할 수 있는 기능입니다."
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/admin/orders/{order_id}/cancellation/{claim_code}",
+      "summary": "Orders cancellation update",
+      "description": "해당 API를 사용하여 취소요청처리한 경우 완료뿐만 아니라 함께 PG 취소도 같이 진행할 수 있습니다."
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/admin/orders/{order_id}/exchange",
+      "summary": "Orders exchange",
+      "description": "주문 교환(Orders exchange)은 주문의 교환 접수 상태와 관련된 기능입니다."
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/admin/orders/{order_id}/exchange/{claim_code}",
+      "summary": "Orders exchange",
+      "description": "특정 주문에 대해 교환 접수를 할 수 있으며 교환이 접수된 주문의 상태를 수정할 수 있습니다."
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/admin/orders/{order_id}/exchangerequests",
+      "summary": "Orders exchangerequests",
+      "description": "교환 처리를 요청한 주문의 교환접수를 거부할 수 있습니다."
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/orders/{order_id}/items",
+      "summary": "Orders items",
+      "description": ""
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/admin/orders/{order_id}/items",
+      "summary": "Orders items",
+      "description": ""
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/admin/orders/{order_id}/items/{order_item_code}",
+      "summary": "Orders items",
+      "description": ""
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/orders/{order_id}/items/{order_item_code}/labels",
+      "summary": "Orders items labels",
+      "description": "원하는 주문 품목에 라벨을 남기거나 조회, 수정, 삭제할 수 있습니다."
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/admin/orders/{order_id}/items/{order_item_code}/labels",
+      "summary": "Orders items labels",
+      "description": "원하는 주문 품목에 라벨을 남기거나 조회, 수정, 삭제할 수 있습니다."
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/admin/orders/{order_id}/items/{order_item_code}/labels",
+      "summary": "Orders items labels",
+      "description": "원하는 주문 품목에 라벨을 남기거나 조회, 수정, 삭제할 수 있습니다."
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/v2/admin/orders/{order_id}/items/{order_item_code}/labels/{name}",
+      "summary": "Orders items labels",
+      "description": "원하는 주문 품목에 라벨을 남기거나 조회, 수정, 삭제할 수 있습니다."
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/admin/orders/{order_id}/items/{order_item_code}/options",
+      "summary": "Orders items options",
+      "description": "주문 품목에 추가입력 옵션을 등록, 수정, 삭제할 수 있습니다."
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/admin/orders/{order_id}/items/{order_item_code}/options",
+      "summary": "Orders items options",
+      "description": "주문 품목에 추가입력 옵션을 등록, 수정, 삭제할 수 있습니다."
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/orders/{order_id}/memos",
+      "summary": "Orders memos 조회",
+      "description": "특정 주문의 메모에 대한 하위 리소스입니다."
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/admin/orders/{order_id}/memos",
+      "summary": "Orders memos 생성",
+      "description": "특정 주문에 대한 메모를 생성합니다."
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/admin/orders/{order_id}/memos/{memo_no}",
+      "summary": "Orders memos 수정",
+      "description": "특정 주문의 메모를 수정합니다."
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/v2/admin/orders/{order_id}/memos/{memo_no}",
+      "summary": "Orders memos 삭제",
+      "description": "특정 주문의 메모를 삭제합니다."
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/admin/orders/{order_id}/payments",
+      "summary": "Orders payments 수정",
+      "description": "특정 주문의 결제상태에 대한 기능입니다."
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/orders/{order_id}/paymenttimeline",
+      "summary": "Orders paymenttimeline",
+      "description": "주문의 결제타임라인(Orders paymenttimeline)은 특정 주문의 결제에 대한 시간적인 연대기에 대한 기능입니다",
+      "parameters": [],
+      "responses": {}
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/orders/{order_id}/paymenttimeline/{payment_no}",
+      "summary": "Orders paymenttimeline with payment number",
+      "description": "",
+      "parameters": [],
+      "responses": {}
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/orders/{order_id}/receivers",
+      "summary": "Orders receivers",
+      "description": "주문수령자 정보(Orders receivers)는 주문한 상품을 배송 받을 수령자의 이름, 연락처, 주소 등의 정보에 대한 기능 입니다.",
+      "parameters": [],
+      "responses": {}
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/admin/orders/{order_id}/receivers",
+      "summary": "Update orders receivers",
+      "description": "",
+      "parameters": [],
+      "responses": {}
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/admin/orders/{order_id}/receivers/{shipping_code}",
+      "summary": "Update orders receivers with shipping code",
+      "description": "",
+      "parameters": [],
+      "responses": {}
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/orders/{order_id}/receivers/history",
+      "summary": "Orders receivers history",
+      "description": "주문-수령자 이력(Orders receivers history)은 특정 주문의 수령자 정보 변경이력에 대한 기능입니다. 수정일(updated_date) 파라미터를 통해 언제 정보가 변경되었는지 확인할 수 있습니다.",
+      "parameters": [],
+      "responses": {}
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/admin/orders/{order_id}/refunds/{refund_code}",
+      "summary": "Orders refunds",
+      "description": "주문 환불(Orders refunds)은 특정 주문의 환불상태와 관련된 기능입니다. 특정 주문의 환불상태를 수정할 수 있습니다.",
+      "parameters": [],
+      "responses": {}
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/admin/orders/{order_id}/return",
+      "summary": "Create an order return",
+      "description": "특정 주문을 반품처리 하거나, 반품처리중인 주문의 상태를 수정할 수 있습니다."
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/admin/orders/{order_id}/return/{claim_code}",
+      "summary": "Update an order return",
+      "description": "특정 주문을 반품처리 하거나, 반품처리중인 주문의 상태를 수정할 수 있습니다."
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/orders/{order_id}/shipments",
+      "summary": "Get order shipments",
+      "description": "주문을 배송처리하기 위해 필요한 배송 정보를 조회합니다."
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/admin/orders/{order_id}/shipments",
+      "summary": "Create order shipments",
+      "description": "주문을 배송처리하기 위해 필요한 배송 정보를 생성합니다."
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/admin/orders/{order_id}/shipments/{shipping_code}",
+      "summary": "Update order shipments",
+      "description": "주문을 배송처리하기 위해 필요한 배송 정보를 수정합니다."
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/v2/admin/orders/{order_id}/shipments/{shipping_code}",
+      "summary": "Delete order shipments",
+      "description": "주문을 배송처리하기 위해 필요한 배송 정보를 삭제합니다."
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/orders/{order_id}/shippingfeecancellation",
+      "summary": "Orders shippingfeecancellation",
+      "description": "주문의 배송비취소(Orders shippingfeecancellation)를 통해 주문의 취소현황을 조회하거나 취소처리를 요청할 수 있습니다",
+      "parameters": [],
+      "responses": {}
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/admin/orders/{order_id}/shippingfeecancellation",
+      "summary": "Orders shippingfeecancellation",
+      "description": "주문의 배송비취소(Orders shippingfeecancellation)를 통해 주문의 취소현황을 조회하거나 취소처리를 요청할 수 있습니다",
+      "parameters": [],
+      "responses": {}
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/admin/orders/{order_id}/shortagecancellation",
+      "summary": "Orders shortagecancellation",
+      "description": "주문의 재고부족취소(Orders shortagecancellation)는 이벤트 혹은 재고설정의 착오 등으로 인해 보유한 재고보다 많은 수량이 판매되었을 때",
+      "parameters": [],
+      "responses": {}
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/orders/benefits",
+      "summary": "Orders benefits",
+      "description": "주문혜택(Orders benefits)은 특정 주문에 적용된 혜택에 관한 기능입니다.",
+      "parameters": [],
+      "responses": {}
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/admin/orders/calculation",
+      "summary": "Orders calculation",
+      "description": "주문의 결제예정금액 계산(Orders calculation)은 주문의 배송추가 등을 체크하여 결제예정금액을 계산하는 기능입니다.",
+      "parameters": [],
+      "responses": {}
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/orders/coupons",
+      "summary": "Orders coupons",
+      "description": "주문 쿠폰(Orders coupons)은 주문에 적용된 쿠폰에 관한 기능입니다. 특정 주문에 대해 적용된 쿠폰의 정보를 조회할 수 있습니다.",
+      "parameters": [],
+      "responses": {}
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/orders/dashboard",
+      "summary": "Orders dashboard",
+      "description": "주문관련 요약 정보를 확인할 수 있습니다. 이 정보는 최근 한달동안 누적된 데이터를 기반으로 합니다.",
+      "parameters": [],
+      "responses": {}
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/orders/inflowgroups",
+      "summary": "Retrieve inflow groups",
+      "description": "유입경로 그룹을 조회합니다."
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/admin/orders/inflowgroups",
+      "summary": "Create an inflow group",
+      "description": "유입경로 그룹을 생성합니다."
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/admin/orders/inflowgroups/{inflow_group_id}",
+      "summary": "Update an inflow group",
+      "description": "유입경로 그룹을 수정합니다."
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/v2/admin/orders/inflowgroups/{inflow_group_id}",
+      "summary": "Delete an inflow group",
+      "description": "유입경로 그룹을 삭제합니다."
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/orders/inflowgroups/{group_id}/inflows",
+      "summary": "Retrieve inflows of a group",
+      "description": "유입경로 그룹의 inflows를 조회합니다."
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/admin/orders/inflowgroups/{group_id}/inflows",
+      "summary": "Create an inflow in a group",
+      "description": "유입경로 그룹에 inflow를 생성합니다."
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/admin/orders/inflowgroups/{group_id}/inflows/{inflow_id}",
+      "summary": "Update an inflow in a group",
+      "description": "유입경로 그룹의 inflow를 수정합니다."
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/v2/admin/orders/inflowgroups/{group_id}/inflows/{inflow_id}",
+      "summary": "Delete an inflow in a group",
+      "description": "유입경로 그룹의 inflow를 삭제합니다."
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/orders/memos",
+      "summary": "Orders memos",
+      "description": "주문 메모에 대한 조회, 등록, 수정, 삭제를 할 수 있습니다."
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/orders/migrations",
+      "summary": "Orders migrations",
+      "description": "이전된 몰의 주문에 대한 주문정보를 등록, 조회, 수정, 삭제할 수 있습니다."
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/admin/orders/migrations",
+      "summary": "Orders migrations",
+      "description": "이전된 몰의 주문에 대한 주문정보를 등록, 조회, 수정, 삭제할 수 있습니다."
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/admin/orders/migrations",
+      "summary": "Orders migrations",
+      "description": "이전된 몰의 주문에 대한 주문정보를 등록, 조회, 수정, 삭제할 수 있습니다."
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/v2/admin/orders/migrations/{order_id}",
+      "summary": "Orders migrations",
+      "description": "이전된 몰의 주문에 대한 주문정보를 등록, 조회, 수정, 삭제할 수 있습니다."
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/orders/paymentamount",
+      "summary": "Retrieve a payment amount",
+      "description": "주문의 실결제금액(Orders paymentamount)은 특정 주문의 실제 결제금액에 대한 기능입니다. 1개 혹은 여러 개의 주문에 대한 실제 결제금액 관련된 정보를 조회할 수 있습니다."
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/orders/saleschannels",
+      "summary": "Retrieve sales channels",
+      "description": "주문 판매채널(Orders saleschannels)은 통합 주문의 판매채널 조회, 등록, 수정, 삭제를 할 수 있습니다. 주문 판매채널은 하위 리소스로 주문(Orders) 하위에서만 사용할 수 있습니다."
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/admin/orders/saleschannels",
+      "summary": "Create a sales channel"
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/admin/orders/saleschannels/{sales_channel_id}",
+      "summary": "Update a sales channel"
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/v2/admin/orders/saleschannels/{sales_channel_id}",
+      "summary": "Delete a sales channel"
+    }
+  ]
+}

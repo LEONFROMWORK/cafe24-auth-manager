@@ -1,0 +1,63 @@
+{
+  "category": "themes",
+  "api_type": "admin",
+  "endpoint_count": 7,
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/themes",
+      "summary": "",
+      "description": "",
+      "parameters": [],
+      "responses": {}
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/themes/count",
+      "summary": "",
+      "description": "",
+      "parameters": [],
+      "responses": {}
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/themes/{skin_no}",
+      "summary": "",
+      "description": "",
+      "parameters": [],
+      "responses": {}
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/themes/{skin_no}/pages",
+      "summary": "",
+      "description": "",
+      "parameters": [],
+      "responses": {}
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/admin/themes/{skin_no}/pages",
+      "summary": "",
+      "description": "",
+      "parameters": [],
+      "responses": {}
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/admin/themes/{skin_no}/pages",
+      "summary": "",
+      "description": "",
+      "parameters": [],
+      "responses": {}
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/v2/admin/themes/{skin_no}/pages",
+      "summary": "",
+      "description": "",
+      "parameters": [],
+      "responses": {}
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "category": "fulfillments",
+  "api_type": "admin",
+  "endpoint_count": 1,
+  "endpoints": [
+    {
+      "method": "POST",
+      "path": "/api/v2/admin/fulfillments",
+      "summary": "배송 정보 등록",
+      "description": "배송업체와 연동하여 배송 정보를 등록하는 기능입니다."
+    }
+  ]
+}

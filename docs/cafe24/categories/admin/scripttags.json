@@ -1,0 +1,43 @@
+{
+  "category": "scripttags",
+  "api_type": "admin",
+  "endpoint_count": 6,
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/scripttags",
+      "summary": "Scripttags",
+      "description": "스크립트태그는 쇼핑몰의 특정 화면에 스크립트를 설치하기 위해 사용할 수 있는 기능입니다."
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/scripttags/count",
+      "summary": "Scripttags Count",
+      "description": "스크립트태그는 쇼핑몰의 특정 화면에 스크립트를 설치하기 위해 사용할 수 있는 기능입니다."
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/scripttags/{script_no}",
+      "summary": "Scripttags",
+      "description": "스크립트태그는 쇼핑몰의 특정 화면에 스크립트를 설치하기 위해 사용할 수 있는 기능입니다."
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/admin/scripttags",
+      "summary": "Scripttags",
+      "description": "스크립트태그는 쇼핑몰의 특정 화면에 스크립트를 설치하기 위해 사용할 수 있는 기능입니다."
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/admin/scripttags/{script_no}",
+      "summary": "Scripttags",
+      "description": "스크립트태그는 쇼핑몰의 특정 화면에 스크립트를 설치하기 위해 사용할 수 있는 기능입니다."
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/v2/admin/scripttags/{script_no}",
+      "summary": "Scripttags",
+      "description": "스크립트태그는 쇼핑몰의 특정 화면에 스크립트를 설치하기 위해 사용할 수 있는 기능입니다."
+    }
+  ]
+}

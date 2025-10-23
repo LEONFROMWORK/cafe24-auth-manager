@@ -1,0 +1,31 @@
+{
+  "category": "autodisplay",
+  "api_type": "admin",
+  "endpoint_count": 4,
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/autodisplay",
+      "summary": "Autodisplay",
+      "description": "자동 진열(Autodisplay)은 상품 분류에 특정 조건에 따라 상품을 자동으로 진열해주는 기능입니다."
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/admin/autodisplay",
+      "summary": "Autodisplay",
+      "description": "자동 진열(Autodisplay)은 상품 분류에 특정 조건에 따라 상품을 자동으로 진열해주는 기능입니다."
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/admin/autodisplay/{display_no}",
+      "summary": "Autodisplay",
+      "description": "자동 진열(Autodisplay)은 상품 분류에 특정 조건에 따라 상품을 자동으로 진열해주는 기능입니다."
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/v2/admin/autodisplay/{display_no}",
+      "summary": "Autodisplay",
+      "description": "자동 진열(Autodisplay)은 상품 분류에 특정 조건에 따라 상품을 자동으로 진열해주는 기능입니다."
+    }
+  ]
+}

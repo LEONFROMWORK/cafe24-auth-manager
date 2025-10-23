@@ -1,0 +1,55 @@
+{
+  "category": "coupons",
+  "api_type": "admin",
+  "endpoint_count": 8,
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/coupons/setting",
+      "summary": "Retrieve coupon settings",
+      "description": "쿠폰 설정(Coupons setting)은 쇼핑몰에서 사용할 쿠폰의 기본적인 설정을 입력할 수 있습니다."
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/admin/coupons/setting",
+      "summary": "Update coupon settings",
+      "description": "쿠폰 설정(Coupons setting)은 쇼핑몰에서 사용할 쿠폰의 기본적인 설정을 입력할 수 있습니다."
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/coupons",
+      "summary": "Retrieve a list of coupons",
+      "description": ""
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/coupons/count",
+      "summary": "Retrieve a count of coupons",
+      "description": ""
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/admin/coupons",
+      "summary": "Create a coupon",
+      "description": ""
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/admin/coupons/{coupon_no}",
+      "summary": "Update a coupon",
+      "description": ""
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/coupons/{coupon_no}/issues",
+      "summary": "Coupons issues 조회",
+      "description": "쿠폰 발급(Coupons issues)은 생성된 쿠폰에 관한 기능입니다."
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/admin/coupons/{coupon_no}/issues",
+      "summary": "Coupons issues 생성",
+      "description": "생성된 쿠폰에 대한 발급."
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "category": "customersprivacy",
+  "api_type": "admin",
+  "endpoint_count": 4,
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/customersprivacy",
+      "summary": "Retrieve customer privacy information",
+      "description": "특정 회원의 개인정보에 대한 리소스입니다."
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/customersprivacy/count",
+      "summary": "Retrieve count of customer privacy records",
+      "description": "특정 회원의 개인정보에 대한 리소스입니다."
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/customersprivacy/{member_id}",
+      "summary": "Retrieve specific customer privacy information",
+      "description": "특정 회원의 개인정보에 대한 리소스입니다."
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/admin/customersprivacy/{member_id}",
+      "summary": "Update specific customer privacy information",
+      "description": "특정 회원의 개인정보를 업데이트하는 리소스입니다."
+    }
+  ]
+}

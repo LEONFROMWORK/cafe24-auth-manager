@@ -1,0 +1,19 @@
+{
+  "category": "dormantaccount",
+  "api_type": "admin",
+  "endpoint_count": 2,
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/dormantaccount",
+      "summary": "Dormantaccount",
+      "description": "휴면 회원 기능을 설정하고 조회할 수 있습니다. 휴면회원 기능은 기본몰에서만 호출 가능합니다."
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/admin/dormantaccount",
+      "summary": "Dormantaccount",
+      "description": "휴면 회원 기능을 설정하고 조회할 수 있습니다. 휴면회원 기능은 기본몰에서만 호출 가능합니다."
+    }
+  ]
+}

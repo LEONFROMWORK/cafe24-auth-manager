@@ -1,0 +1,43 @@
+{
+  "category": "financials",
+  "api_type": "admin",
+  "endpoint_count": 6,
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/financials/paymentgateway",
+      "summary": "Financials paymentgateway",
+      "description": "Financials paymentgateway(PG 정산)는 PG사별 계약정보를 제공합니다."
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/financials/store",
+      "summary": "Financials store",
+      "description": "Financials store(상점의 거래정보)는 상점의 PG사별 거래정보를 제공합니다."
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/financials/monthlyreviews",
+      "summary": "Financials monthlyreviews",
+      "description": "월별 리뷰 통계(financials monthlyreviews)는 월별 리뷰 정보를 제공합니다. 검색 기간 내의 월별 리뷰 개수 합계, 월별 리뷰 평점 평균을 확인할 수 있습니다."
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/financials/dailysales",
+      "summary": "Financials dailysales",
+      "description": "일별 매출(Financials dailysales)은 PG사별, 일별 매출 정보를 제공합니다. 검색 조건에 부합하는 매출 정보 검색이 가능합니다."
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/financials/monthlysales",
+      "summary": "Financials monthlysales",
+      "description": "월별 매출(Financials monthlysales)은 PG사별, 월별 매출 정보를 제공합니다. 검색 조건에 부합하는 매출 정보 검색이 가능합니다."
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/financials/dailyvisits",
+      "summary": "Financials dailyvisits",
+      "description": "일별 방문수(Financials dailyvisits)는 검색 기간 내의 일별 방문수를 제공합니다."
+    }
+  ]
+}

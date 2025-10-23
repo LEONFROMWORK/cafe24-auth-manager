@@ -1,0 +1,29 @@
+{
+  "category": "customerevents",
+  "api_type": "admin",
+  "endpoint_count": 3,
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/customerevents",
+      "summary": "Customer events 조회",
+      "description": "고객 이벤트에 대한 정보를 조회합니다."
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/admin/customerevents",
+      "summary": "회원정보 이벤트 생성",
+      "description": "",
+      "parameters": [],
+      "responses": {}
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/admin/customerevents",
+      "summary": "회원정보 이벤트 수정",
+      "description": "",
+      "parameters": [],
+      "responses": {}
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "category": "automails",
+  "api_type": "admin",
+  "endpoint_count": 2,
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/automails",
+      "summary": "Automails 조회",
+      "description": "자동 알림 메일 관리에서 메일 항목별 고객, 운영자, 공급사 설정 값을 관리할 수 있습니다."
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/admin/automails",
+      "summary": "Automails 수정",
+      "description": "자동 알림 메일 관리에서 메일 항목별 고객, 운영자, 공급사 설정 값을 관리할 수 있습니다."
+    }
+  ]
+}

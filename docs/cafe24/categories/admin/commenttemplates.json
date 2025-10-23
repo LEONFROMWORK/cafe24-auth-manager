@@ -1,0 +1,25 @@
+{
+  "category": "commenttemplates",
+  "api_type": "admin",
+  "endpoint_count": 3,
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/commenttemplates",
+      "summary": "Commenttemplates",
+      "description": "게시판 내에서 자주 사용하는 단말을 관리할 수 있는 기능입니다."
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/commenttemplates/{comment_no}",
+      "summary": "Commenttemplates",
+      "description": "게시판 내에서 자주 사용하는 단말을 관리할 수 있는 기능입니다."
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/admin/commenttemplates",
+      "summary": "Commenttemplates",
+      "description": "게시판 내에서 자주 사용하는 단말을 관리할 수 있는 기능입니다."
+    }
+  ]
+}

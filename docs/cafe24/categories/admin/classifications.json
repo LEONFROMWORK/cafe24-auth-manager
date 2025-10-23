@@ -1,0 +1,18 @@
+{
+  "category": "classifications",
+  "api_type": "admin",
+  "endpoint_count": 2,
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/classifications",
+      "summary": "Retrieve classifications",
+      "description": "자체분류(Classifications)는 상품등록시 사용한 자체분류에 입력하는 정보입니다."
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/classifications/count",
+      "summary": "Count classifications"
+    }
+  ]
+}

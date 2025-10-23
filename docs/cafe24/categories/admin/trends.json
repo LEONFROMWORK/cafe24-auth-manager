@@ -1,0 +1,19 @@
+{
+  "category": "trends",
+  "api_type": "admin",
+  "endpoint_count": 2,
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/trends",
+      "summary": "Retrieve trends",
+      "description": "트렌드 정보를 조회합니다."
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/trends/count",
+      "summary": "Retrieve a count of trends",
+      "description": "트렌드 수를 조회합니다."
+    }
+  ]
+}

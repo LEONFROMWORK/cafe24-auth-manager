@@ -1,0 +1,13 @@
+{
+  "category": "control",
+  "api_type": "admin",
+  "endpoint_count": 1,
+  "endpoints": [
+    {
+      "method": "PUT",
+      "path": "/api/v2/admin/control",
+      "summary": "Control",
+      "description": "주문 입금확인 제어버튼 기능을 제공합니다."
+    }
+  ]
+}

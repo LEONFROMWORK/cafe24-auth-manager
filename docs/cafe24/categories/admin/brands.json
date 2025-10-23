@@ -1,0 +1,33 @@
+{
+  "category": "brands",
+  "api_type": "admin",
+  "endpoint_count": 5,
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/brands",
+      "summary": "Retrieve brands",
+      "description": "브랜드(Brands)는 쇼핑몰 상품의 '브랜드'를 나타냅니다."
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/brands/count",
+      "summary": "Count brands"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/admin/brands",
+      "summary": "Add brand"
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/admin/brands/{brand_code}",
+      "summary": "Update brand"
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/v2/admin/brands/{brand_code}",
+      "summary": "Delete brand"
+    }
+  ]
+}

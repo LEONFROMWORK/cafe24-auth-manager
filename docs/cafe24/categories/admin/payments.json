@@ -1,0 +1,13 @@
+{
+  "category": "payments",
+  "api_type": "admin",
+  "endpoint_count": 1,
+  "endpoints": [
+    {
+      "method": "PUT",
+      "path": "/api/v2/admin/payments",
+      "summary": "Payments",
+      "description": "결제상태(Payments)는 특정 주문의 결제상태에 대해 기능입니다."
+    }
+  ]
+}

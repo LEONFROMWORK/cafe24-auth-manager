@@ -1,0 +1,3424 @@
+{
+  "title": "Cafe24 API Documentation Index",
+  "description": "Complete reference for all Cafe24 Admin and Front APIs",
+  "version": "2.0",
+  "total_categories": 93,
+  "total_endpoints": 535,
+  "admin_api": {
+    "activitylogs": {
+      "file": "categories/admin/activitylogs.json",
+      "endpoint_count": 2,
+      "methods": {
+        "GET": [
+          {
+            "path": "/api/v2/admin/activitylogs",
+            "summary": "Activitylogs 조회"
+          },
+          {
+            "path": "/api/v2/admin/activitylogs/{process_no}",
+            "summary": "특정 Activitylog 조회"
+          }
+        ]
+      },
+      "description": "activitylogs"
+    },
+    "apps": {
+      "file": "categories/admin/apps.json",
+      "endpoint_count": 2,
+      "methods": {
+        "GET": [
+          {
+            "path": "/api/v2/admin/apps",
+            "summary": "앱 목록 조회"
+          }
+        ],
+        "PUT": [
+          {
+            "path": "/api/v2/admin/apps",
+            "summary": "앱 정보 수정"
+          }
+        ]
+      },
+      "description": "apps"
+    },
+    "appstore": {
+      "file": "categories/admin/appstore.json",
+      "endpoint_count": 4,
+      "methods": {
+        "GET": [
+          {
+            "path": "/api/v2/admin/appstore/orders/{order_id}",
+            "summary": "앱스토어 주문 조회"
+          },
+          {
+            "path": "/api/v2/admin/appstore/payments",
+            "summary": "앱스토어 결제 조회"
+          },
+          {
+            "path": "/api/v2/admin/appstore/payments/count",
+            "summary": "앱스토어 결제 건수 조회"
+          }
+        ],
+        "POST": [
+          {
+            "path": "/api/v2/admin/appstore/orders",
+            "summary": "앱스토어 주문 생성"
+          }
+        ]
+      },
+      "description": "appstore"
+    },
+    "autodisplay": {
+      "file": "categories/admin/autodisplay.json",
+      "endpoint_count": 4,
+      "methods": {
+        "GET": [
+          {
+            "path": "/api/v2/admin/autodisplay",
+            "summary": "Autodisplay"
+          }
+        ],
+        "POST": [
+          {
+            "path": "/api/v2/admin/autodisplay",
+            "summary": "Autodisplay"
+          }
+        ],
+        "PUT": [
+          {
+            "path": "/api/v2/admin/autodisplay/{display_no}",
+            "summary": "Autodisplay"
+          }
+        ],
+        "DELETE": [
+          {
+            "path": "/api/v2/admin/autodisplay/{display_no}",
+            "summary": "Autodisplay"
+          }
+        ]
+      },
+      "description": "autodisplay"
+    },
+    "automails": {
+      "file": "categories/admin/automails.json",
+      "endpoint_count": 2,
+      "methods": {
+        "GET": [
+          {
+            "path": "/api/v2/admin/automails",
+            "summary": "Automails 조회"
+          }
+        ],
+        "PUT": [
+          {
+            "path": "/api/v2/admin/automails",
+            "summary": "Automails 수정"
+          }
+        ]
+      },
+      "description": "automails"
+    },
+    "automessages": {
+      "file": "categories/admin/automessages.json",
+      "endpoint_count": 3,
+      "methods": {
+        "GET": [
+          {
+            "path": "/api/v2/admin/automessages/arguments",
+            "summary": "Automessages arguments 조회"
+          },
+          {
+            "path": "/api/v2/admin/automessages/setting",
+            "summary": "Automessages setting 조회"
+          }
+        ],
+        "PUT": [
+          {
+            "path": "/api/v2/admin/automessages/setting",
+            "summary": "Automessages setting 수정"
+          }
+        ]
+      },
+      "description": "automessages"
+    },
+    "benefits": {
+      "file": "categories/admin/benefits.json",
+      "endpoint_count": 8,
+      "methods": {
+        "GET": [
+          {
+            "path": "/api/v2/admin/benefits/setting",
+            "summary": "Benefits setting 조회"
+          },
+          {
+            "path": "/api/v2/admin/benefits",
+            "summary": "Retrieve a list of customer benefits"
+          },
+          {
+            "path": "/api/v2/admin/benefits/count",
+            "summary": "Retrieve a count of customer benefits"
+          },
+          {
+            "path": "/api/v2/admin/benefits/{benefit_no}",
+            "summary": "Retrieve a customer benefit"
+          }
+        ],
+        "PUT": [
+          {
+            "path": "/api/v2/admin/benefits/setting",
+            "summary": "Benefits setting 수정"
+          },
+          {
+            "path": "/api/v2/admin/benefits/{benefit_no}",
+            "summary": "Update a customer benefit"
+          }
+        ],
+        "POST": [
+          {
+            "path": "/api/v2/admin/benefits",
+            "summary": "Create a customer benefit"
+          }
+        ],
+        "DELETE": [
+          {
+            "path": "/api/v2/admin/benefits/{benefit_no}",
+            "summary": "Delete a customer benefit"
+          }
+        ]
+      },
+      "description": "혜택/프로모션"
+    },
+    "boards": {
+      "file": "categories/admin/boards.json",
+      "endpoint_count": 15,
+      "methods": {
+        "GET": [
+          {
+            "path": "/api/v2/admin/boards/setting",
+            "summary": "Boards setting 조회"
+          },
+          {
+            "path": "/api/v2/admin/boards",
+            "summary": "Boards 목록 조회"
+          },
+          {
+            "path": "/api/v2/admin/boards/{board_no}",
+            "summary": "특정 Board 조회"
+          },
+          {
+            "path": "/api/v2/admin/boards/{board_no}/articles",
+            "summary": "게시물 목록 조회"
+          },
+          {
+            "path": "/api/v2/admin/boards/{board_no}/articles/{article_no}/comments",
+            "summary": "댓글 목록 조회"
+          },
+          {
+            "path": "/api/v2/admin/boards/{board_no}/comments",
+            "summary": "Boards comments"
+          },
+          {
+            "path": "/api/v2/admin/boards/{board_no}/seo",
+            "summary": "Boards seo"
+          }
+        ],
+        "PUT": [
+          {
+            "path": "/api/v2/admin/boards/setting",
+            "summary": "Boards setting 수정"
+          },
+          {
+            "path": "/api/v2/admin/boards/{board_no}",
+            "summary": "특정 Board 수정"
+          },
+          {
+            "path": "/api/v2/admin/boards/{board_no}/articles/{article_no}",
+            "summary": "게시물 수정"
+          },
+          {
+            "path": "/api/v2/admin/boards/{board_no}/seo",
+            "summary": "Boards seo"
+          }
+        ],
+        "POST": [
+          {
+            "path": "/api/v2/admin/boards/{board_no}/articles",
+            "summary": "게시물 생성"
+          },
+          {
+            "path": "/api/v2/admin/boards/{board_no}/articles/{article_no}/comments",
+            "summary": "댓글 생성"
+          }
+        ],
+        "DELETE": [
+          {
+            "path": "/api/v2/admin/boards/{board_no}/articles/{article_no}",
+            "summary": "게시물 삭제"
+          },
+          {
+            "path": "/api/v2/admin/boards/{board_no}/articles/{article_no}/comments/{comment_no}",
+            "summary": "댓글 삭제"
+          }
+        ]
+      },
+      "description": "게시판 관리"
+    },
+    "brands": {
+      "file": "categories/admin/brands.json",
+      "endpoint_count": 5,
+      "methods": {
+        "GET": [
+          {
+            "path": "/api/v2/admin/brands",
+            "summary": "Retrieve brands"
+          },
+          {
+            "path": "/api/v2/admin/brands/count",
+            "summary": "Count brands"
+          }
+        ],
+        "POST": [
+          {
+            "path": "/api/v2/admin/brands",
+            "summary": "Add brand"
+          }
+        ],
+        "PUT": [
+          {
+            "path": "/api/v2/admin/brands/{brand_code}",
+            "summary": "Update brand"
+          }
+        ],
+        "DELETE": [
+          {
+            "path": "/api/v2/admin/brands/{brand_code}",
+            "summary": "Delete brand"
+          }
+        ]
+      },
+      "description": "brands"
+    },
+    "bundleproducts": {
+      "file": "categories/admin/bundleproducts.json",
+      "endpoint_count": 5,
+      "methods": {
+        "GET": [
+          {
+            "path": "/api/v2/admin/bundleproducts",
+            "summary": "Bundleproducts"
+          },
+          {
+            "path": "/api/v2/admin/bundleproducts/{product_no}",
+            "summary": "Bundleproduct Details"
+          }
+        ],
+        "POST": [
+          {
+            "path": "/api/v2/admin/bundleproducts",
+            "summary": "Create Bundleproduct"
+          }
+        ],
+        "PUT": [
+          {
+            "path": "/api/v2/admin/bundleproducts/{product_no}",
+            "summary": "Update Bundleproduct"
+          }
+        ],
+        "DELETE": [
+          {
+            "path": "/api/v2/admin/bundleproducts/{product_no}",
+            "summary": "Delete Bundleproduct"
+          }
+        ]
+      },
+      "description": "bundleproducts"
+    },
+    "cancellation": {
+      "file": "categories/admin/cancellation.json",
+      "endpoint_count": 3,
+      "methods": {
+        "GET": [
+          {
+            "path": "/api/v2/admin/cancellation/{claim_code}",
+            "summary": "Cancellation"
+          }
+        ],
+        "POST": [
+          {
+            "path": "/api/v2/admin/cancellation",
+            "summary": "Cancellation"
+          }
+        ],
+        "PUT": [
+          {
+            "path": "/api/v2/admin/cancellation",
+            "summary": "Cancellation"
+          }
+        ]
+      },
+      "description": "cancellation"
+    },
+    "cancellationrequests": {
+      "file": "categories/admin/cancellationrequests.json",
+      "endpoint_count": 2,
+      "methods": {
+        "POST": [
+          {
+            "path": "/api/v2/admin/cancellationrequests",
+            "summary": "Cancellationrequests"
+          }
+        ],
+        "PUT": [
+          {
+            "path": "/api/v2/admin/cancellationrequests",
+            "summary": "Cancellationrequests"
+          }
+        ]
+      },
+      "description": "cancellationrequests"
+    },
+    "carriers": {
+      "file": "categories/admin/carriers.json",
+      "endpoint_count": 5,
+      "methods": {
+        "GET": [
+          {
+            "path": "/api/v2/admin/carriers",
+            "summary": "Carriers 목록 조회"
+          },
+          {
+            "path": "/api/v2/admin/carriers/{carrier_id}",
+            "summary": "Carriers 상세 조회"
+          }
+        ],
+        "POST": [
+          {
+            "path": "/api/v2/admin/carriers",
+            "summary": "Carriers 생성"
+          }
+        ],
+        "PUT": [
+          {
+            "path": "/api/v2/admin/carriers/{carrier_id}",
+            "summary": "Carriers 수정"
+          }
+        ],
+        "DELETE": [
+          {
+            "path": "/api/v2/admin/carriers/{carrier_id}",
+            "summary": "Carriers 삭제"
+          }
+        ]
+      },
+      "description": "carriers"
+    },
+    "carts": {
+      "file": "categories/admin/carts.json",
+      "endpoint_count": 3,
+      "methods": {
+        "GET": [
+          {
+            "path": "/api/v2/admin/carts/setting",
+            "summary": "Retrieve cart settings"
+          },
+          {
+            "path": "/api/v2/admin/carts",
+            "summary": "Carts"
+          }
+        ],
+        "PUT": [
+          {
+            "path": "/api/v2/admin/carts/setting",
+            "summary": "Update cart settings"
+          }
+        ]
+      },
+      "description": "carts"
+    },
+    "cashreceipt": {
+      "file": "categories/admin/cashreceipt.json",
+      "endpoint_count": 4,
+      "methods": {
+        "GET": [
+          {
+            "path": "/api/v2/admin/cashreceipt",
+            "summary": "Cashreceipt 조회"
+          }
+        ],
+        "POST": [
+          {
+            "path": "/api/v2/admin/cashreceipt",
+            "summary": "Cashreceipt 생성"
+          }
+        ],
+        "PUT": [
+          {
+            "path": "/api/v2/admin/cashreceipt/{cashreceipt_no}",
+            "summary": "Cashreceipt 수정"
+          },
+          {
+            "path": "/api/v2/admin/cashreceipt/{cashreceipt_no}/cancellation",
+            "summary": "Cashreceipt 취소"
+          }
+        ]
+      },
+      "description": "cashreceipt"
+    },
+    "categories": {
+      "file": "categories/admin/categories.json",
+      "endpoint_count": 20,
+      "methods": {
+        "GET": [
+          {
+            "path": "/api/v2/admin/categories/properties/setting",
+            "summary": "Retrieve categories properties settings"
+          },
+          {
+            "path": "/api/v2/admin/categories/{category_no}/products",
+            "summary": "Retrieve products in a category"
+          },
+          {
+            "path": "/api/v2/admin/categories/{category_no}/products/count",
+            "summary": "Count products in a category"
+          },
+          {
+            "path": "/api/v2/admin/categories/properties",
+            "summary": "Categories properties"
+          },
+          {
+            "path": "/api/v2/admin/categories",
+            "summary": "카테고리 목록 조회"
+          },
+          {
+            "path": "/api/v2/admin/categories/count",
+            "summary": "카테고리 개수 조회"
+          },
+          {
+            "path": "/api/v2/admin/categories/{category_no}",
+            "summary": "카테고리 상세 조회"
+          },
+          {
+            "path": "/api/v2/admin/categories/{category_no}/decorationimages",
+            "summary": "카테고리 장식 이미지 조회"
+          },
+          {
+            "path": "/api/v2/admin/categories/{category_no}/seo",
+            "summary": "카테고리 SEO 조회"
+          }
+        ],
+        "PUT": [
+          {
+            "path": "/api/v2/admin/categories/properties/setting",
+            "summary": "Update categories properties settings"
+          },
+          {
+            "path": "/api/v2/admin/categories/{category_no}/products",
+            "summary": "Update products in a category"
+          },
+          {
+            "path": "/api/v2/admin/categories/properties",
+            "summary": "Categories properties"
+          },
+          {
+            "path": "/api/v2/admin/categories/{category_no}",
+            "summary": "카테고리 수정"
+          },
+          {
+            "path": "/api/v2/admin/categories/{category_no}/decorationimages",
+            "summary": "카테고리 장식 이미지 수정"
+          },
+          {
+            "path": "/api/v2/admin/categories/{category_no}/seo",
+            "summary": "카테고리 SEO 업데이트"
+          }
+        ],
+        "POST": [
+          {
+            "path": "/api/v2/admin/categories/{category_no}/products",
+            "summary": "Add a product to a category"
+          },
+          {
+            "path": "/api/v2/admin/categories/properties",
+            "summary": "Categories properties"
+          },
+          {
+            "path": "/api/v2/admin/categories",
+            "summary": "카테고리 생성"
+          }
+        ],
+        "DELETE": [
+          {
+            "path": "/api/v2/admin/categories/{category_no}/products/{product_no}",
+            "summary": "Remove a product from a category"
+          },
+          {
+            "path": "/api/v2/admin/categories/{category_no}",
+            "summary": "카테고리 삭제"
+          }
+        ]
+      },
+      "description": "카테고리 관리"
+    },
+    "classifications": {
+      "file": "categories/admin/classifications.json",
+      "endpoint_count": 2,
+      "methods": {
+        "GET": [
+          {
+            "path": "/api/v2/admin/classifications",
+            "summary": "Retrieve classifications"
+          },
+          {
+            "path": "/api/v2/admin/classifications/count",
+            "summary": "Count classifications"
+          }
+        ]
+      },
+      "description": "classifications"
+    },
+    "collectrequests": {
+      "file": "categories/admin/collectrequests.json",
+      "endpoint_count": 1,
+      "methods": {
+        "PUT": [
+          {
+            "path": "/api/v2/admin/collectrequests/{request_no}",
+            "summary": "Collectrequests 수정"
+          }
+        ]
+      },
+      "description": "collectrequests"
+    },
+    "commenttemplates": {
+      "file": "categories/admin/commenttemplates.json",
+      "endpoint_count": 3,
+      "methods": {
+        "GET": [
+          {
+            "path": "/api/v2/admin/commenttemplates",
+            "summary": "Commenttemplates"
+          },
+          {
+            "path": "/api/v2/admin/commenttemplates/{comment_no}",
+            "summary": "Commenttemplates"
+          }
+        ],
+        "POST": [
+          {
+            "path": "/api/v2/admin/commenttemplates",
+            "summary": "Commenttemplates"
+          }
+        ]
+      },
+      "description": "commenttemplates"
+    },
+    "commonevents": {
+      "file": "categories/admin/commonevents.json",
+      "endpoint_count": 4,
+      "methods": {
+        "GET": [
+          {
+            "path": "/api/v2/admin/commonevents",
+            "summary": "Retrieve common events"
+          }
+        ],
+        "POST": [
+          {
+            "path": "/api/v2/admin/commonevents",
+            "summary": "Create a common event"
+          }
+        ],
+        "PUT": [
+          {
+            "path": "/api/v2/admin/commonevents/{event_no}",
+            "summary": "Update a common event"
+          }
+        ],
+        "DELETE": [
+          {
+            "path": "/api/v2/admin/commonevents/{event_no}",
+            "summary": "Delete a common event"
+          }
+        ]
+      },
+      "description": "commonevents"
+    },
+    "control": {
+      "file": "categories/admin/control.json",
+      "endpoint_count": 1,
+      "methods": {
+        "PUT": [
+          {
+            "path": "/api/v2/admin/control",
+            "summary": "Control"
+          }
+        ]
+      },
+      "description": "control"
+    },
+    "coupons": {
+      "file": "categories/admin/coupons.json",
+      "endpoint_count": 8,
+      "methods": {
+        "GET": [
+          {
+            "path": "/api/v2/admin/coupons/setting",
+            "summary": "Retrieve coupon settings"
+          },
+          {
+            "path": "/api/v2/admin/coupons",
+            "summary": "Retrieve a list of coupons"
+          },
+          {
+            "path": "/api/v2/admin/coupons/count",
+            "summary": "Retrieve a count of coupons"
+          },
+          {
+            "path": "/api/v2/admin/coupons/{coupon_no}/issues",
+            "summary": "Coupons issues 조회"
+          }
+        ],
+        "PUT": [
+          {
+            "path": "/api/v2/admin/coupons/setting",
+            "summary": "Update coupon settings"
+          },
+          {
+            "path": "/api/v2/admin/coupons/{coupon_no}",
+            "summary": "Update a coupon"
+          }
+        ],
+        "POST": [
+          {
+            "path": "/api/v2/admin/coupons",
+            "summary": "Create a coupon"
+          },
+          {
+            "path": "/api/v2/admin/coupons/{coupon_no}/issues",
+            "summary": "Coupons issues 생성"
+          }
+        ]
+      },
+      "description": "쿠폰 관리"
+    },
+    "credits": {
+      "file": "categories/admin/credits.json",
+      "endpoint_count": 2,
+      "methods": {
+        "GET": [
+          {
+            "path": "/api/v2/admin/credits",
+            "summary": "Retrieve credits information"
+          },
+          {
+            "path": "/api/v2/admin/credits/report",
+            "summary": "Credits report"
+          }
+        ]
+      },
+      "description": "credits"
+    },
+    "currency": {
+      "file": "categories/admin/currency.json",
+      "endpoint_count": 2,
+      "methods": {
+        "GET": [
+          {
+            "path": "/api/v2/admin/currency",
+            "summary": "Retrieve currency information"
+          }
+        ],
+        "PUT": [
+          {
+            "path": "/api/v2/admin/currency",
+            "summary": "Update currency information"
+          }
+        ]
+      },
+      "description": "currency"
+    },
+    "customerevents": {
+      "file": "categories/admin/customerevents.json",
+      "endpoint_count": 3,
+      "methods": {
+        "GET": [
+          {
+            "path": "/api/v2/admin/customerevents",
+            "summary": "Customer events 조회"
+          }
+        ],
+        "POST": [
+          {
+            "path": "/api/v2/admin/customerevents",
+            "summary": "회원정보 이벤트 생성"
+          }
+        ],
+        "PUT": [
+          {
+            "path": "/api/v2/admin/customerevents",
+            "summary": "회원정보 이벤트 수정"
+          }
+        ]
+      },
+      "description": "customerevents"
+    },
+    "customergroups": {
+      "file": "categories/admin/customergroups.json",
+      "endpoint_count": 5,
+      "methods": {
+        "GET": [
+          {
+            "path": "/api/v2/admin/customergroups",
+            "summary": "Customergroups 조회"
+          },
+          {
+            "path": "/api/v2/admin/customergroups/count",
+            "summary": "Customergroups 수 조회"
+          },
+          {
+            "path": "/api/v2/admin/customergroups/{group_no}",
+            "summary": "특정 Customergroup 조회"
+          },
+          {
+            "path": "/api/v2/admin/customergroups/setting",
+            "summary": "Customergroups setting"
+          }
+        ],
+        "POST": [
+          {
+            "path": "/api/v2/admin/customergroups/{group_no}/customers",
+            "summary": "Customergroups customers 추가"
+          }
+        ]
+      },
+      "description": "customergroups"
+    },
+    "customers": {
+      "file": "categories/admin/customers.json",
+      "endpoint_count": 24,
+      "methods": {
+        "GET": [
+          {
+            "path": "/api/v2/admin/customers/setting",
+            "summary": "Retrieve customer settings"
+          },
+          {
+            "path": "/api/v2/admin/customers",
+            "summary": "Customers"
+          },
+          {
+            "path": "/api/v2/admin/customers/{member_id}/autoupdate",
+            "summary": "Customers autoupdate"
+          },
+          {
+            "path": "/api/v2/admin/customers/{member_id}/memos/count",
+            "summary": "Customers memos count"
+          },
+          {
+            "path": "/api/v2/admin/customers/{member_id}/memos",
+            "summary": "Customers memos list"
+          },
+          {
+            "path": "/api/v2/admin/customers/{member_id}/memos/{memo_no}",
+            "summary": "Customers memo detail"
+          },
+          {
+            "path": "/api/v2/admin/customers/{member_id}/paymentinformation",
+            "summary": "Retrieve a customer's list of payment information"
+          },
+          {
+            "path": "/api/v2/admin/customers/{member_id}/plusapp",
+            "summary": "Retrieve customer's plusapp information"
+          },
+          {
+            "path": "/api/v2/admin/customers/{member_id}/social",
+            "summary": "Retrieve customer's social information"
+          },
+          {
+            "path": "/api/v2/admin/customers/properties",
+            "summary": "Customers properties 조회"
+          },
+          {
+            "path": "/api/v2/admin/customers/{member_id}/coupons",
+            "summary": "회원 쿠폰 조회"
+          },
+          {
+            "path": "/api/v2/admin/customers/{member_id}/coupons/count",
+            "summary": "회원 쿠폰 수 조회"
+          },
+          {
+            "path": "/api/v2/admin/customers/{member_id}/wishlist/count",
+            "summary": "회원 관심상품 수 조회"
+          },
+          {
+            "path": "/api/v2/admin/customers/{member_id}/wishlist",
+            "summary": "회원 관심상품 목록 조회"
+          }
+        ],
+        "PUT": [
+          {
+            "path": "/api/v2/admin/customers/setting",
+            "summary": "Update customer settings"
+          },
+          {
+            "path": "/api/v2/admin/customers/{member_id}/memos/{memo_no}",
+            "summary": "Update customer memo"
+          },
+          {
+            "path": "/api/v2/admin/customers/properties",
+            "summary": "Customers properties 수정"
+          }
+        ],
+        "DELETE": [
+          {
+            "path": "/api/v2/admin/customers/{member_id}",
+            "summary": "Delete Customer"
+          },
+          {
+            "path": "/api/v2/admin/customers/{member_id}/memos/{memo_no}",
+            "summary": "Delete customer memo"
+          },
+          {
+            "path": "/api/v2/admin/customers/{member_id}/paymentinformation",
+            "summary": "Delete customer's payment information"
+          },
+          {
+            "path": "/api/v2/admin/customers/{member_id}/paymentinformation/{payment_method_id}",
+            "summary": "Delete specific payment method"
+          },
+          {
+            "path": "/api/v2/admin/customers/{member_id}/coupons/{coupon_no}",
+            "summary": "회원 쿠폰 삭제"
+          }
+        ],
+        "POST": [
+          {
+            "path": "/api/v2/admin/customers/{member_id}/memos",
+            "summary": "Create customer memo"
+          },
+          {
+            "path": "/api/v2/admin/customers/{member_id}/invitation",
+            "summary": "Customers invitation"
+          }
+        ]
+      },
+      "description": "고객/회원 관리"
+    },
+    "customersprivacy": {
+      "file": "categories/admin/customersprivacy.json",
+      "endpoint_count": 4,
+      "methods": {
+        "GET": [
+          {
+            "path": "/api/v2/admin/customersprivacy",
+            "summary": "Retrieve customer privacy information"
+          },
+          {
+            "path": "/api/v2/admin/customersprivacy/count",
+            "summary": "Retrieve count of customer privacy records"
+          },
+          {
+            "path": "/api/v2/admin/customersprivacy/{member_id}",
+            "summary": "Retrieve specific customer privacy information"
+          }
+        ],
+        "PUT": [
+          {
+            "path": "/api/v2/admin/customersprivacy/{member_id}",
+            "summary": "Update specific customer privacy information"
+          }
+        ]
+      },
+      "description": "customersprivacy"
+    },
+    "dashboard": {
+      "file": "categories/admin/dashboard.json",
+      "endpoint_count": 1,
+      "methods": {
+        "GET": [
+          {
+            "path": "/api/v2/admin/dashboard",
+            "summary": "Dashboard"
+          }
+        ]
+      },
+      "description": "dashboard"
+    },
+    "databridge": {
+      "file": "categories/admin/databridge.json",
+      "endpoint_count": 1,
+      "methods": {
+        "GET": [
+          {
+            "path": "/api/v2/admin/databridge/logs",
+            "summary": "Databridge logs"
+          }
+        ]
+      },
+      "description": "databridge"
+    },
+    "discountcodes": {
+      "file": "categories/admin/discountcodes.json",
+      "endpoint_count": 5,
+      "methods": {
+        "GET": [
+          {
+            "path": "/api/v2/admin/discountcodes",
+            "summary": "Retrieve a list of discount codes"
+          },
+          {
+            "path": "/api/v2/admin/discountcodes/{discount_code_no}",
+            "summary": "Retrieve a discount code"
+          }
+        ],
+        "POST": [
+          {
+            "path": "/api/v2/admin/discountcodes",
+            "summary": "Create a discount code"
+          }
+        ],
+        "PUT": [
+          {
+            "path": "/api/v2/admin/discountcodes/{discount_code_no}",
+            "summary": "Update a discount code"
+          }
+        ],
+        "DELETE": [
+          {
+            "path": "/api/v2/admin/discountcodes/{discount_code_no}",
+            "summary": "Delete a discount code"
+          }
+        ]
+      },
+      "description": "discountcodes"
+    },
+    "dormantaccount": {
+      "file": "categories/admin/dormantaccount.json",
+      "endpoint_count": 2,
+      "methods": {
+        "GET": [
+          {
+            "path": "/api/v2/admin/dormantaccount",
+            "summary": "Dormantaccount"
+          }
+        ],
+        "PUT": [
+          {
+            "path": "/api/v2/admin/dormantaccount",
+            "summary": "Dormantaccount"
+          }
+        ]
+      },
+      "description": "dormantaccount"
+    },
+    "exchange": {
+      "file": "categories/admin/exchange.json",
+      "endpoint_count": 3,
+      "methods": {
+        "GET": [
+          {
+            "path": "/api/v2/admin/exchange/{claim_code}",
+            "summary": "Exchange 조회"
+          }
+        ],
+        "POST": [
+          {
+            "path": "/api/v2/admin/exchange",
+            "summary": "Exchange 생성"
+          }
+        ],
+        "PUT": [
+          {
+            "path": "/api/v2/admin/exchange",
+            "summary": "Exchange 수정"
+          }
+        ]
+      },
+      "description": "exchange"
+    },
+    "exchangerequests": {
+      "file": "categories/admin/exchangerequests.json",
+      "endpoint_count": 2,
+      "methods": {
+        "POST": [
+          {
+            "path": "/api/v2/admin/exchangerequests",
+            "summary": "Exchange Requests 생성"
+          }
+        ],
+        "PUT": [
+          {
+            "path": "/api/v2/admin/exchangerequests",
+            "summary": "Exchange Requests 수정"
+          }
+        ]
+      },
+      "description": "exchangerequests"
+    },
+    "financials": {
+      "file": "categories/admin/financials.json",
+      "endpoint_count": 6,
+      "methods": {
+        "GET": [
+          {
+            "path": "/api/v2/admin/financials/paymentgateway",
+            "summary": "Financials paymentgateway"
+          },
+          {
+            "path": "/api/v2/admin/financials/store",
+            "summary": "Financials store"
+          },
+          {
+            "path": "/api/v2/admin/financials/monthlyreviews",
+            "summary": "Financials monthlyreviews"
+          },
+          {
+            "path": "/api/v2/admin/financials/dailysales",
+            "summary": "Financials dailysales"
+          },
+          {
+            "path": "/api/v2/admin/financials/monthlysales",
+            "summary": "Financials monthlysales"
+          },
+          {
+            "path": "/api/v2/admin/financials/dailyvisits",
+            "summary": "Financials dailyvisits"
+          }
+        ]
+      },
+      "description": "financials"
+    },
+    "fulfillments": {
+      "file": "categories/admin/fulfillments.json",
+      "endpoint_count": 1,
+      "methods": {
+        "POST": [
+          {
+            "path": "/api/v2/admin/fulfillments",
+            "summary": "배송 정보 등록"
+          }
+        ]
+      },
+      "description": "fulfillments"
+    },
+    "icons": {
+      "file": "categories/admin/icons.json",
+      "endpoint_count": 1,
+      "methods": {
+        "GET": [
+          {
+            "path": "/api/v2/admin/icons",
+            "summary": "Retrieve icons"
+          }
+        ]
+      },
+      "description": "icons"
+    },
+    "images": {
+      "file": "categories/admin/images.json",
+      "endpoint_count": 2,
+      "methods": {
+        "GET": [
+          {
+            "path": "/api/v2/admin/images/setting",
+            "summary": "Images setting"
+          }
+        ],
+        "PUT": [
+          {
+            "path": "/api/v2/admin/images/setting",
+            "summary": "Images setting"
+          }
+        ]
+      },
+      "description": "images"
+    },
+    "information": {
+      "file": "categories/admin/information.json",
+      "endpoint_count": 2,
+      "methods": {
+        "GET": [
+          {
+            "path": "/api/v2/admin/information",
+            "summary": "Information"
+          }
+        ],
+        "PUT": [
+          {
+            "path": "/api/v2/admin/information",
+            "summary": "Information"
+          }
+        ]
+      },
+      "description": "information"
+    },
+    "kakaoalimtalk": {
+      "file": "categories/admin/kakaoalimtalk.json",
+      "endpoint_count": 3,
+      "methods": {
+        "GET": [
+          {
+            "path": "/api/v2/admin/kakaoalimtalk/profile",
+            "summary": "Kakaoalimtalk profile"
+          },
+          {
+            "path": "/api/v2/admin/kakaoalimtalk/setting",
+            "summary": "Kakaoalimtalk setting"
+          }
+        ],
+        "PUT": [
+          {
+            "path": "/api/v2/admin/kakaoalimtalk/setting",
+            "summary": "Kakaoalimtalk setting"
+          }
+        ]
+      },
+      "description": "kakaoalimtalk"
+    },
+    "kakaopay": {
+      "file": "categories/admin/kakaopay.json",
+      "endpoint_count": 2,
+      "methods": {
+        "GET": [
+          {
+            "path": "/api/v2/admin/kakaopay/setting",
+            "summary": "Kakaopay setting"
+          }
+        ],
+        "PUT": [
+          {
+            "path": "/api/v2/admin/kakaopay/setting",
+            "summary": "Kakaopay setting"
+          }
+        ]
+      },
+      "description": "kakaopay"
+    },
+    "labels": {
+      "file": "categories/admin/labels.json",
+      "endpoint_count": 2,
+      "methods": {
+        "GET": [
+          {
+            "path": "/api/v2/admin/labels",
+            "summary": "라벨 조회"
+          }
+        ],
+        "POST": [
+          {
+            "path": "/api/v2/admin/labels",
+            "summary": "라벨 생성"
+          }
+        ]
+      },
+      "description": "labels"
+    },
+    "mains": {
+      "file": "categories/admin/mains.json",
+      "endpoint_count": 14,
+      "methods": {
+        "GET": [
+          {
+            "path": "/api/v2/admin/mains/properties/setting",
+            "summary": "Mains properties setting 조회"
+          },
+          {
+            "path": "/api/v2/admin/mains/{display_group}/products",
+            "summary": "Mains products"
+          },
+          {
+            "path": "/api/v2/admin/mains/{display_group}/products/count",
+            "summary": "Mains products"
+          },
+          {
+            "path": "/api/v2/admin/mains/properties",
+            "summary": "Mains properties"
+          },
+          {
+            "path": "/api/v2/admin/mains",
+            "summary": "Retrieve main categories"
+          }
+        ],
+        "PUT": [
+          {
+            "path": "/api/v2/admin/mains/properties/setting",
+            "summary": "Mains properties setting 수정"
+          },
+          {
+            "path": "/api/v2/admin/mains/{display_group}/products",
+            "summary": "Mains products"
+          },
+          {
+            "path": "/api/v2/admin/mains/properties",
+            "summary": "Mains properties"
+          },
+          {
+            "path": "/api/v2/admin/mains/{display_group}",
+            "summary": "Update main category"
+          }
+        ],
+        "POST": [
+          {
+            "path": "/api/v2/admin/mains/{display_group}/products",
+            "summary": "Mains products"
+          },
+          {
+            "path": "/api/v2/admin/mains/properties",
+            "summary": "Mains properties"
+          },
+          {
+            "path": "/api/v2/admin/mains",
+            "summary": "Add main category"
+          }
+        ],
+        "DELETE": [
+          {
+            "path": "/api/v2/admin/mains/{display_group}/products/{product_no}",
+            "summary": "Mains products"
+          },
+          {
+            "path": "/api/v2/admin/mains/{display_group}",
+            "summary": "Delete main category"
+          }
+        ]
+      },
+      "description": "mains"
+    },
+    "manufacturers": {
+      "file": "categories/admin/manufacturers.json",
+      "endpoint_count": 5,
+      "methods": {
+        "GET": [
+          {
+            "path": "/api/v2/admin/manufacturers",
+            "summary": "Retrieve a list of manufacturers"
+          },
+          {
+            "path": "/api/v2/admin/manufacturers/{manufacturer_code}",
+            "summary": "Retrieve a manufacturer"
+          },
+          {
+            "path": "/api/v2/admin/manufacturers/count",
+            "summary": "Retrieve a count of manufacturers"
+          }
+        ],
+        "POST": [
+          {
+            "path": "/api/v2/admin/manufacturers",
+            "summary": "Create a manufacturer"
+          }
+        ],
+        "PUT": [
+          {
+            "path": "/api/v2/admin/manufacturers/{manufacturer_code}",
+            "summary": "Update a manufacturer"
+          }
+        ]
+      },
+      "description": "manufacturers"
+    },
+    "menus": {
+      "file": "categories/admin/menus.json",
+      "endpoint_count": 1,
+      "methods": {
+        "GET": [
+          {
+            "path": "/api/v2/admin/menus",
+            "summary": "Menus 조회"
+          }
+        ]
+      },
+      "description": "menus"
+    },
+    "mobile": {
+      "file": "categories/admin/mobile.json",
+      "endpoint_count": 2,
+      "methods": {
+        "GET": [
+          {
+            "path": "/api/v2/admin/mobile/setting",
+            "summary": "Mobile setting 조회"
+          }
+        ],
+        "PUT": [
+          {
+            "path": "/api/v2/admin/mobile/setting",
+            "summary": "Mobile setting 수정"
+          }
+        ]
+      },
+      "description": "mobile"
+    },
+    "naverpay": {
+      "file": "categories/admin/naverpay.json",
+      "endpoint_count": 3,
+      "methods": {
+        "GET": [
+          {
+            "path": "/api/v2/admin/naverpay/setting",
+            "summary": "Naverpay setting 조회"
+          }
+        ],
+        "POST": [
+          {
+            "path": "/api/v2/admin/naverpay/setting",
+            "summary": "Naverpay setting 생성"
+          }
+        ],
+        "PUT": [
+          {
+            "path": "/api/v2/admin/naverpay/setting",
+            "summary": "Naverpay setting 수정"
+          }
+        ]
+      },
+      "description": "naverpay"
+    },
+    "orderform": {
+      "file": "categories/admin/orderform.json",
+      "endpoint_count": 6,
+      "methods": {
+        "GET": [
+          {
+            "path": "/api/v2/admin/orderform/setting",
+            "summary": "Orderform setting 조회"
+          },
+          {
+            "path": "/api/v2/admin/orderform/properties",
+            "summary": "주문서 속성 조회"
+          }
+        ],
+        "PUT": [
+          {
+            "path": "/api/v2/admin/orderform/setting",
+            "summary": "Orderform setting 수정"
+          },
+          {
+            "path": "/api/v2/admin/orderform/properties/{orderform_property_id}",
+            "summary": ""
+          }
+        ],
+        "POST": [
+          {
+            "path": "/api/v2/admin/orderform/properties",
+            "summary": ""
+          }
+        ],
+        "DELETE": [
+          {
+            "path": "/api/v2/admin/orderform/properties/{orderform_property_id}",
+            "summary": ""
+          }
+        ]
+      },
+      "description": "orderform"
+    },
+    "orders": {
+      "file": "categories/admin/orders.json",
+      "endpoint_count": 70,
+      "methods": {
+        "GET": [
+          {
+            "path": "/api/v2/admin/orders/setting",
+            "summary": "Orders setting 조회"
+          },
+          {
+            "path": "/api/v2/admin/orders/status",
+            "summary": "Orders status"
+          },
+          {
+            "path": "/api/v2/admin/orders",
+            "summary": ""
+          },
+          {
+            "path": "/api/v2/admin/orders/{order_id}",
+            "summary": ""
+          },
+          {
+            "path": "/api/v2/admin/orders/count",
+            "summary": ""
+          },
+          {
+            "path": "/api/v2/admin/orders/{order_id}/buyer",
+            "summary": "Orders buyer"
+          },
+          {
+            "path": "/api/v2/admin/orders/{order_id}/buyer/history",
+            "summary": "Orders buyer history"
+          },
+          {
+            "path": "/api/v2/admin/orders/{order_id}/items",
+            "summary": "Orders items"
+          },
+          {
+            "path": "/api/v2/admin/orders/{order_id}/items/{order_item_code}/labels",
+            "summary": "Orders items labels"
+          },
+          {
+            "path": "/api/v2/admin/orders/{order_id}/memos",
+            "summary": "Orders memos 조회"
+          },
+          {
+            "path": "/api/v2/admin/orders/{order_id}/paymenttimeline",
+            "summary": "Orders paymenttimeline"
+          },
+          {
+            "path": "/api/v2/admin/orders/{order_id}/paymenttimeline/{payment_no}",
+            "summary": "Orders paymenttimeline with payment number"
+          },
+          {
+            "path": "/api/v2/admin/orders/{order_id}/receivers",
+            "summary": "Orders receivers"
+          },
+          {
+            "path": "/api/v2/admin/orders/{order_id}/receivers/history",
+            "summary": "Orders receivers history"
+          },
+          {
+            "path": "/api/v2/admin/orders/{order_id}/shipments",
+            "summary": "Get order shipments"
+          },
+          {
+            "path": "/api/v2/admin/orders/{order_id}/shippingfeecancellation",
+            "summary": "Orders shippingfeecancellation"
+          },
+          {
+            "path": "/api/v2/admin/orders/benefits",
+            "summary": "Orders benefits"
+          },
+          {
+            "path": "/api/v2/admin/orders/coupons",
+            "summary": "Orders coupons"
+          },
+          {
+            "path": "/api/v2/admin/orders/dashboard",
+            "summary": "Orders dashboard"
+          },
+          {
+            "path": "/api/v2/admin/orders/inflowgroups",
+            "summary": "Retrieve inflow groups"
+          },
+          {
+            "path": "/api/v2/admin/orders/inflowgroups/{group_id}/inflows",
+            "summary": "Retrieve inflows of a group"
+          },
+          {
+            "path": "/api/v2/admin/orders/memos",
+            "summary": "Orders memos"
+          },
+          {
+            "path": "/api/v2/admin/orders/migrations",
+            "summary": "Orders migrations"
+          },
+          {
+            "path": "/api/v2/admin/orders/paymentamount",
+            "summary": "Retrieve a payment amount"
+          },
+          {
+            "path": "/api/v2/admin/orders/saleschannels",
+            "summary": "Retrieve sales channels"
+          }
+        ],
+        "PUT": [
+          {
+            "path": "/api/v2/admin/orders/setting",
+            "summary": "Orders setting 수정"
+          },
+          {
+            "path": "/api/v2/admin/orders/status",
+            "summary": "Orders status"
+          },
+          {
+            "path": "/api/v2/admin/orders",
+            "summary": ""
+          },
+          {
+            "path": "/api/v2/admin/orders/{order_id}",
+            "summary": ""
+          },
+          {
+            "path": "/api/v2/admin/orders/{order_id}/buyer",
+            "summary": "Update order buyer information"
+          },
+          {
+            "path": "/api/v2/admin/orders/{order_id}/cancellation/{claim_code}",
+            "summary": "Orders cancellation update"
+          },
+          {
+            "path": "/api/v2/admin/orders/{order_id}/exchange/{claim_code}",
+            "summary": "Orders exchange"
+          },
+          {
+            "path": "/api/v2/admin/orders/{order_id}/exchangerequests",
+            "summary": "Orders exchangerequests"
+          },
+          {
+            "path": "/api/v2/admin/orders/{order_id}/items/{order_item_code}",
+            "summary": "Orders items"
+          },
+          {
+            "path": "/api/v2/admin/orders/{order_id}/items/{order_item_code}/labels",
+            "summary": "Orders items labels"
+          },
+          {
+            "path": "/api/v2/admin/orders/{order_id}/items/{order_item_code}/options",
+            "summary": "Orders items options"
+          },
+          {
+            "path": "/api/v2/admin/orders/{order_id}/memos/{memo_no}",
+            "summary": "Orders memos 수정"
+          },
+          {
+            "path": "/api/v2/admin/orders/{order_id}/payments",
+            "summary": "Orders payments 수정"
+          },
+          {
+            "path": "/api/v2/admin/orders/{order_id}/receivers",
+            "summary": "Update orders receivers"
+          },
+          {
+            "path": "/api/v2/admin/orders/{order_id}/receivers/{shipping_code}",
+            "summary": "Update orders receivers with shipping code"
+          },
+          {
+            "path": "/api/v2/admin/orders/{order_id}/refunds/{refund_code}",
+            "summary": "Orders refunds"
+          },
+          {
+            "path": "/api/v2/admin/orders/{order_id}/return/{claim_code}",
+            "summary": "Update an order return"
+          },
+          {
+            "path": "/api/v2/admin/orders/{order_id}/shipments/{shipping_code}",
+            "summary": "Update order shipments"
+          },
+          {
+            "path": "/api/v2/admin/orders/inflowgroups/{inflow_group_id}",
+            "summary": "Update an inflow group"
+          },
+          {
+            "path": "/api/v2/admin/orders/inflowgroups/{group_id}/inflows/{inflow_id}",
+            "summary": "Update an inflow in a group"
+          },
+          {
+            "path": "/api/v2/admin/orders/migrations",
+            "summary": "Orders migrations"
+          },
+          {
+            "path": "/api/v2/admin/orders/saleschannels/{sales_channel_id}",
+            "summary": "Update a sales channel"
+          }
+        ],
+        "DELETE": [
+          {
+            "path": "/api/v2/admin/orders/{order_id}/autocalculation",
+            "summary": "Remove auto calculation setting of a specific order"
+          },
+          {
+            "path": "/api/v2/admin/orders/{order_id}/items/{order_item_code}/labels/{name}",
+            "summary": "Orders items labels"
+          },
+          {
+            "path": "/api/v2/admin/orders/{order_id}/memos/{memo_no}",
+            "summary": "Orders memos 삭제"
+          },
+          {
+            "path": "/api/v2/admin/orders/{order_id}/shipments/{shipping_code}",
+            "summary": "Delete order shipments"
+          },
+          {
+            "path": "/api/v2/admin/orders/inflowgroups/{inflow_group_id}",
+            "summary": "Delete an inflow group"
+          },
+          {
+            "path": "/api/v2/admin/orders/inflowgroups/{group_id}/inflows/{inflow_id}",
+            "summary": "Delete an inflow in a group"
+          },
+          {
+            "path": "/api/v2/admin/orders/migrations/{order_id}",
+            "summary": "Orders migrations"
+          },
+          {
+            "path": "/api/v2/admin/orders/saleschannels/{sales_channel_id}",
+            "summary": "Delete a sales channel"
+          }
+        ],
+        "POST": [
+          {
+            "path": "/api/v2/admin/orders/{order_id}/cancellation",
+            "summary": "Orders cancellation"
+          },
+          {
+            "path": "/api/v2/admin/orders/{order_id}/exchange",
+            "summary": "Orders exchange"
+          },
+          {
+            "path": "/api/v2/admin/orders/{order_id}/items",
+            "summary": "Orders items"
+          },
+          {
+            "path": "/api/v2/admin/orders/{order_id}/items/{order_item_code}/labels",
+            "summary": "Orders items labels"
+          },
+          {
+            "path": "/api/v2/admin/orders/{order_id}/items/{order_item_code}/options",
+            "summary": "Orders items options"
+          },
+          {
+            "path": "/api/v2/admin/orders/{order_id}/memos",
+            "summary": "Orders memos 생성"
+          },
+          {
+            "path": "/api/v2/admin/orders/{order_id}/return",
+            "summary": "Create an order return"
+          },
+          {
+            "path": "/api/v2/admin/orders/{order_id}/shipments",
+            "summary": "Create order shipments"
+          },
+          {
+            "path": "/api/v2/admin/orders/{order_id}/shippingfeecancellation",
+            "summary": "Orders shippingfeecancellation"
+          },
+          {
+            "path": "/api/v2/admin/orders/{order_id}/shortagecancellation",
+            "summary": "Orders shortagecancellation"
+          },
+          {
+            "path": "/api/v2/admin/orders/calculation",
+            "summary": "Orders calculation"
+          },
+          {
+            "path": "/api/v2/admin/orders/inflowgroups",
+            "summary": "Create an inflow group"
+          },
+          {
+            "path": "/api/v2/admin/orders/inflowgroups/{group_id}/inflows",
+            "summary": "Create an inflow in a group"
+          },
+          {
+            "path": "/api/v2/admin/orders/migrations",
+            "summary": "Orders migrations"
+          },
+          {
+            "path": "/api/v2/admin/orders/saleschannels",
+            "summary": "Create a sales channel"
+          }
+        ]
+      },
+      "description": "주문 관리"
+    },
+    "origin": {
+      "file": "categories/admin/origin.json",
+      "endpoint_count": 1,
+      "methods": {
+        "GET": [
+          {
+            "path": "/api/v2/admin/origin",
+            "summary": "Retrieve origin information"
+          }
+        ]
+      },
+      "description": "origin"
+    },
+    "other": {
+      "file": "categories/admin/other.json",
+      "endpoint_count": 4,
+      "methods": {
+        "GET": [
+          {
+            "path": "/api/v2/categories",
+            "summary": "카테고리 목록 조회"
+          },
+          {
+            "path": "/api/v2/oauth/authorize",
+            "summary": "Get Authentication Code"
+          }
+        ],
+        "POST": [
+          {
+            "path": "/api/v2/oauth/token",
+            "summary": "Get Access Token"
+          },
+          {
+            "path": "/api/v2/oauth/revoke",
+            "summary": "Revoke Access Token"
+          }
+        ]
+      },
+      "description": "기타"
+    },
+    "payment": {
+      "file": "categories/admin/payment.json",
+      "endpoint_count": 2,
+      "methods": {
+        "GET": [
+          {
+            "path": "/api/v2/admin/payment/setting",
+            "summary": "Payment setting"
+          }
+        ],
+        "PUT": [
+          {
+            "path": "/api/v2/admin/payment/setting",
+            "summary": "Payment setting"
+          }
+        ]
+      },
+      "description": "payment"
+    },
+    "paymentgateway": {
+      "file": "categories/admin/paymentgateway.json",
+      "endpoint_count": 7,
+      "methods": {
+        "POST": [
+          {
+            "path": "/api/v2/admin/paymentgateway",
+            "summary": "Paymentgateway"
+          },
+          {
+            "path": "/api/v2/admin/paymentgateway/{client_id}/paymentmethods",
+            "summary": "Paymentgateway paymentmethods 등록"
+          }
+        ],
+        "PUT": [
+          {
+            "path": "/api/v2/admin/paymentgateway/{client_id}",
+            "summary": "Paymentgateway"
+          },
+          {
+            "path": "/api/v2/admin/paymentgateway/{client_id}/paymentmethods/{payment_method_id}",
+            "summary": "Paymentgateway paymentmethods 수정"
+          }
+        ],
+        "DELETE": [
+          {
+            "path": "/api/v2/admin/paymentgateway/{client_id}",
+            "summary": "Paymentgateway"
+          },
+          {
+            "path": "/api/v2/admin/paymentgateway/{client_id}/paymentmethods/{payment_method_id}",
+            "summary": "Paymentgateway paymentmethods 삭제"
+          }
+        ],
+        "GET": [
+          {
+            "path": "/api/v2/admin/paymentgateway/{client_id}/paymentmethods",
+            "summary": "Paymentgateway paymentmethods 조회"
+          }
+        ]
+      },
+      "description": "paymentgateway"
+    },
+    "paymentmethods": {
+      "file": "categories/admin/paymentmethods.json",
+      "endpoint_count": 3,
+      "methods": {
+        "GET": [
+          {
+            "path": "/api/v2/admin/paymentmethods",
+            "summary": "Paymentmethods 조회"
+          },
+          {
+            "path": "/api/v2/admin/paymentmethods/{code}/paymentproviders",
+            "summary": "Retrieve payment providers"
+          }
+        ],
+        "PUT": [
+          {
+            "path": "/api/v2/admin/paymentmethods/{code}/paymentproviders/{name}",
+            "summary": "Update payment provider visibility"
+          }
+        ]
+      },
+      "description": "paymentmethods"
+    },
+    "payments": {
+      "file": "categories/admin/payments.json",
+      "endpoint_count": 1,
+      "methods": {
+        "PUT": [
+          {
+            "path": "/api/v2/admin/payments",
+            "summary": "Payments"
+          }
+        ]
+      },
+      "description": "결제 관리"
+    },
+    "points": {
+      "file": "categories/admin/points.json",
+      "endpoint_count": 8,
+      "methods": {
+        "GET": [
+          {
+            "path": "/api/v2/admin/points/setting",
+            "summary": "Retrieve points settings"
+          },
+          {
+            "path": "/api/v2/admin/points",
+            "summary": "Points"
+          },
+          {
+            "path": "/api/v2/admin/points/autoexpiration",
+            "summary": "Retrieve an automatic points expiration"
+          },
+          {
+            "path": "/api/v2/admin/points/report",
+            "summary": "Points report"
+          }
+        ],
+        "PUT": [
+          {
+            "path": "/api/v2/admin/points/setting",
+            "summary": "Update points settings"
+          }
+        ],
+        "POST": [
+          {
+            "path": "/api/v2/admin/points",
+            "summary": "Points"
+          },
+          {
+            "path": "/api/v2/admin/points/autoexpiration",
+            "summary": "Create an automatic points expiration"
+          }
+        ],
+        "DELETE": [
+          {
+            "path": "/api/v2/admin/points/autoexpiration",
+            "summary": "Delete an automatic points expiration"
+          }
+        ]
+      },
+      "description": "포인트 관리"
+    },
+    "policy": {
+      "file": "categories/admin/policy.json",
+      "endpoint_count": 2,
+      "methods": {
+        "GET": [
+          {
+            "path": "/api/v2/admin/policy",
+            "summary": "Policy 조회"
+          }
+        ],
+        "PUT": [
+          {
+            "path": "/api/v2/admin/policy",
+            "summary": "Policy 수정"
+          }
+        ]
+      },
+      "description": "policy"
+    },
+    "privacy": {
+      "file": "categories/admin/privacy.json",
+      "endpoint_count": 6,
+      "methods": {
+        "GET": [
+          {
+            "path": "/api/v2/admin/privacy/boards",
+            "summary": "Privacy boards 조회"
+          },
+          {
+            "path": "/api/v2/admin/privacy/join",
+            "summary": "Privacy join 조회"
+          },
+          {
+            "path": "/api/v2/admin/privacy/orders",
+            "summary": "Privacy orders"
+          }
+        ],
+        "PUT": [
+          {
+            "path": "/api/v2/admin/privacy/boards",
+            "summary": "Privacy boards 수정"
+          },
+          {
+            "path": "/api/v2/admin/privacy/join",
+            "summary": "Privacy join 수정"
+          },
+          {
+            "path": "/api/v2/admin/privacy/orders",
+            "summary": "Privacy orders"
+          }
+        ]
+      },
+      "description": "privacy"
+    },
+    "products": {
+      "file": "categories/admin/products.json",
+      "endpoint_count": 73,
+      "methods": {
+        "GET": [
+          {
+            "path": "/api/v2/admin/products",
+            "summary": "상품 목록 조회"
+          },
+          {
+            "path": "/api/v2/admin/products?product_no=11,12,13",
+            "summary": "콤마로 여러 건을 검색"
+          },
+          {
+            "path": "/api/v2/admin/products?shop_no=2",
+            "summary": "멀티쇼핑몰 정보 조회"
+          },
+          {
+            "path": "/api/v2/admin/products/128",
+            "summary": "상세 조회와 단건 조회"
+          },
+          {
+            "path": "/api/v2/admin/products?limit=100",
+            "summary": "Pagination"
+          },
+          {
+            "path": "/api/v2/admin/products?limit=100&offset=200",
+            "summary": "Pagination"
+          },
+          {
+            "path": "/api/v2/admin/products?fields=product_name,price",
+            "summary": "특정 항목 조회"
+          },
+          {
+            "path": "/api/v2/admin/products/570?embed=variants,stock",
+            "summary": "하위 리소스 조회"
+          },
+          {
+            "path": "/api/v2/admin/products/properties/setting",
+            "summary": "Products properties setting"
+          },
+          {
+            "path": "/api/v2/admin/products/setting",
+            "summary": "Products setting"
+          },
+          {
+            "path": "/api/v2/admin/products/count",
+            "summary": "Get product count"
+          },
+          {
+            "path": "/api/v2/admin/products/{product_no}",
+            "summary": "Get product details"
+          },
+          {
+            "path": "/api/v2/admin/products/{product_no}/approve",
+            "summary": "Retrieve a product approval status"
+          },
+          {
+            "path": "/api/v2/admin/products/{product_no}/customproperties",
+            "summary": "Retrieve custom properties of a product"
+          },
+          {
+            "path": "/api/v2/admin/products/{product_no}/decorationimages",
+            "summary": "Retrieve decoration images of a product"
+          },
+          {
+            "path": "/api/v2/admin/products/{product_no}/discountprice",
+            "summary": "Products discountprice"
+          },
+          {
+            "path": "/api/v2/admin/products/{product_no}/hits/count",
+            "summary": "Products hits"
+          },
+          {
+            "path": "/api/v2/admin/products/{product_no}/icons",
+            "summary": "Products icons"
+          },
+          {
+            "path": "/api/v2/admin/products/{product_no}/memos",
+            "summary": "상품 메모 목록 조회"
+          },
+          {
+            "path": "/api/v2/admin/products/{product_no}/memos/{memo_no}",
+            "summary": "상품 메모 조회"
+          },
+          {
+            "path": "/api/v2/admin/products/{product_no}/options",
+            "summary": "Retrieve product options"
+          },
+          {
+            "path": "/api/v2/admin/products/{product_no}/seo",
+            "summary": "Retrieve product SEO"
+          },
+          {
+            "path": "/api/v2/admin/products/{product_no}/tags/count",
+            "summary": "상품 태그 수 조회"
+          },
+          {
+            "path": "/api/v2/admin/products/{product_no}/tags",
+            "summary": "상품 태그 목록 조회"
+          },
+          {
+            "path": "/api/v2/admin/products/{product_no}/variants",
+            "summary": "상품 변형 목록 조회"
+          },
+          {
+            "path": "/api/v2/admin/products/{product_no}/variants/{variant_code}",
+            "summary": "Retrieve a product variant"
+          },
+          {
+            "path": "/api/v2/admin/products/{product_no}/variants/{variant_code}/inventories",
+            "summary": "Retrieve product variant inventories"
+          },
+          {
+            "path": "/api/v2/admin/products/customproperties",
+            "summary": "Retrieve user-defined properties"
+          },
+          {
+            "path": "/api/v2/admin/products/decorationimages",
+            "summary": "Retrieve decoration images"
+          },
+          {
+            "path": "/api/v2/admin/products/icons",
+            "summary": "Products icons"
+          },
+          {
+            "path": "/api/v2/admin/products/properties",
+            "summary": "Products properties"
+          },
+          {
+            "path": "/api/v2/admin/products/{product_no}/carts/count",
+            "summary": "Retrieve a count of carts containing a product"
+          },
+          {
+            "path": "/api/v2/admin/products/{product_no}/carts",
+            "summary": "Retrieve a list of carts containing a product"
+          },
+          {
+            "path": "/api/v2/admin/products/{product_no}/wishlist/customers",
+            "summary": "Retrieve a list of customers with a product in their wishlist"
+          },
+          {
+            "path": "/api/v2/admin/products/{product_no}/wishlist/customers/count",
+            "summary": "Retrieve a count of customers with a product in their wishlist"
+          }
+        ],
+        "PUT": [
+          {
+            "path": "/api/v2/admin/products/properties/setting",
+            "summary": "Products properties setting"
+          },
+          {
+            "path": "/api/v2/admin/products/{product_no}",
+            "summary": "Update product"
+          },
+          {
+            "path": "/api/v2/admin/products/{product_no}/additionalimages",
+            "summary": "Update Additional Images"
+          },
+          {
+            "path": "/api/v2/admin/products/{product_no}/approve",
+            "summary": "Update a product approval status"
+          },
+          {
+            "path": "/api/v2/admin/products/{product_no}/customproperties/{property_no}",
+            "summary": "Update a custom property of a product"
+          },
+          {
+            "path": "/api/v2/admin/products/{product_no}/decorationimages",
+            "summary": "Update product decoration images"
+          },
+          {
+            "path": "/api/v2/admin/products/{product_no}/icons",
+            "summary": "Update product icon"
+          },
+          {
+            "path": "/api/v2/admin/products/{product_no}/memos/{memo_no}",
+            "summary": "상품 메모 수정"
+          },
+          {
+            "path": "/api/v2/admin/products/{product_no}/options",
+            "summary": "Update product options"
+          },
+          {
+            "path": "/api/v2/admin/products/{product_no}/seo",
+            "summary": "Update product SEO"
+          },
+          {
+            "path": "/api/v2/admin/products/{product_no}/variants/{variant_code}",
+            "summary": "Update a product variant"
+          },
+          {
+            "path": "/api/v2/admin/products/{product_no}/variants",
+            "summary": "Update multiple product variants"
+          },
+          {
+            "path": "/api/v2/admin/products/{product_no}/variants/{variant_code}/inventories",
+            "summary": "Update product variant inventories"
+          },
+          {
+            "path": "/api/v2/admin/products/customproperties/{property_no}",
+            "summary": "Update user-defined properties"
+          },
+          {
+            "path": "/api/v2/admin/products/properties",
+            "summary": "Products properties"
+          }
+        ],
+        "POST": [
+          {
+            "path": "/api/v2/admin/products",
+            "summary": "Create a new product"
+          },
+          {
+            "path": "/api/v2/admin/products/{product_no}/additionalimages",
+            "summary": "Add Additional Images"
+          },
+          {
+            "path": "/api/v2/admin/products/{product_no}/approve",
+            "summary": "Create a product approval request"
+          },
+          {
+            "path": "/api/v2/admin/products/{product_no}/decorationimages",
+            "summary": "Create decoration images for a product"
+          },
+          {
+            "path": "/api/v2/admin/products/{product_no}/icons",
+            "summary": "Add product icon"
+          },
+          {
+            "path": "/api/v2/admin/products/{product_no}/images",
+            "summary": "상품 이미지 업로드"
+          },
+          {
+            "path": "/api/v2/admin/products/{product_no}/memos",
+            "summary": "상품 메모 생성"
+          },
+          {
+            "path": "/api/v2/admin/products/{product_no}/options",
+            "summary": "Create product options"
+          },
+          {
+            "path": "/api/v2/admin/products/{product_no}/tags",
+            "summary": "상품 태그 추가"
+          },
+          {
+            "path": "/api/v2/admin/products/customproperties",
+            "summary": "Create user-defined properties"
+          },
+          {
+            "path": "/api/v2/admin/products/images",
+            "summary": "Products images"
+          },
+          {
+            "path": "/api/v2/admin/products/properties",
+            "summary": "Products properties"
+          }
+        ],
+        "DELETE": [
+          {
+            "path": "/api/v2/admin/products/{product_no}",
+            "summary": "Delete product"
+          },
+          {
+            "path": "/api/v2/admin/products/{product_no}/additionalimages",
+            "summary": "Delete Additional Images"
+          },
+          {
+            "path": "/api/v2/admin/products/{product_no}/customproperties/{property_no}",
+            "summary": "Delete a custom property of a product"
+          },
+          {
+            "path": "/api/v2/admin/products/{product_no}/decorationimages/{code}",
+            "summary": "Remove a product decoration image"
+          },
+          {
+            "path": "/api/v2/admin/products/{product_no}/icons/{code}",
+            "summary": "Delete product icon"
+          },
+          {
+            "path": "/api/v2/admin/products/{product_no}/images",
+            "summary": "상품 이미지 삭제"
+          },
+          {
+            "path": "/api/v2/admin/products/{product_no}/memos/{memo_no}",
+            "summary": "상품 메모 삭제"
+          },
+          {
+            "path": "/api/v2/admin/products/{product_no}/options",
+            "summary": "Delete product options"
+          },
+          {
+            "path": "/api/v2/admin/products/{product_no}/tags/{tag}",
+            "summary": "상품 태그 삭제"
+          },
+          {
+            "path": "/api/v2/admin/products/{product_no}/variants/{variant_code}",
+            "summary": "Delete a product variant"
+          },
+          {
+            "path": "/api/v2/admin/products/customproperties/{property_no}",
+            "summary": "Delete user-defined properties"
+          }
+        ]
+      },
+      "description": "상품 관리 (등록, 수정, 조회, 삭제)"
+    },
+    "recipes": {
+      "file": "categories/admin/recipes.json",
+      "endpoint_count": 3,
+      "methods": {
+        "GET": [
+          {
+            "path": "/api/v2/admin/recipes",
+            "summary": "Recipes"
+          }
+        ],
+        "POST": [
+          {
+            "path": "/api/v2/admin/recipes",
+            "summary": "Recipes"
+          }
+        ],
+        "DELETE": [
+          {
+            "path": "/api/v2/admin/recipes/{recipe_code}",
+            "summary": "Recipes"
+          }
+        ]
+      },
+      "description": "recipes"
+    },
+    "recipientgroups": {
+      "file": "categories/admin/recipientgroups.json",
+      "endpoint_count": 5,
+      "methods": {
+        "GET": [
+          {
+            "path": "/api/v2/admin/recipientgroups",
+            "summary": "Recipientgroups 조회"
+          },
+          {
+            "path": "/api/v2/admin/recipientgroups/{group_no}",
+            "summary": "Recipientgroup 상세 조회"
+          }
+        ],
+        "POST": [
+          {
+            "path": "/api/v2/admin/recipientgroups",
+            "summary": "Recipientgroup 생성"
+          }
+        ],
+        "PUT": [
+          {
+            "path": "/api/v2/admin/recipientgroups/{group_no}",
+            "summary": "Recipientgroup 수정"
+          }
+        ],
+        "DELETE": [
+          {
+            "path": "/api/v2/admin/recipientgroups/{group_no}",
+            "summary": "Recipientgroup 삭제"
+          }
+        ]
+      },
+      "description": "recipientgroups"
+    },
+    "redirects": {
+      "file": "categories/admin/redirects.json",
+      "endpoint_count": 4,
+      "methods": {
+        "GET": [
+          {
+            "path": "/api/v2/admin/redirects",
+            "summary": "Redirects 조회"
+          }
+        ],
+        "POST": [
+          {
+            "path": "/api/v2/admin/redirects",
+            "summary": "Redirects 생성"
+          }
+        ],
+        "PUT": [
+          {
+            "path": "/api/v2/admin/redirects/{id}",
+            "summary": "Redirects 수정"
+          }
+        ],
+        "DELETE": [
+          {
+            "path": "/api/v2/admin/redirects/{id}",
+            "summary": "Redirects 삭제"
+          }
+        ]
+      },
+      "description": "redirects"
+    },
+    "refunds": {
+      "file": "categories/admin/refunds.json",
+      "endpoint_count": 2,
+      "methods": {
+        "GET": [
+          {
+            "path": "/api/v2/admin/refunds",
+            "summary": "Refunds"
+          },
+          {
+            "path": "/api/v2/admin/refunds/{refund_code}",
+            "summary": "Refunds by Code"
+          }
+        ]
+      },
+      "description": "refunds"
+    },
+    "regionalsurcharges": {
+      "file": "categories/admin/regionalsurcharges.json",
+      "endpoint_count": 2,
+      "methods": {
+        "GET": [
+          {
+            "path": "/api/v2/admin/regionalsurcharges",
+            "summary": "Regional surcharges 조회"
+          }
+        ],
+        "PUT": [
+          {
+            "path": "/api/v2/admin/regionalsurcharges",
+            "summary": "Regional surcharges 업데이트"
+          }
+        ]
+      },
+      "description": "regionalsurcharges"
+    },
+    "reports": {
+      "file": "categories/admin/reports.json",
+      "endpoint_count": 3,
+      "methods": {
+        "GET": [
+          {
+            "path": "/api/v2/admin/reports/hourlysales",
+            "summary": "Reports hourlysales"
+          },
+          {
+            "path": "/api/v2/admin/reports/productsales",
+            "summary": "Reports productsales"
+          },
+          {
+            "path": "/api/v2/admin/reports/salesvolume",
+            "summary": "Reports salesvolume"
+          }
+        ]
+      },
+      "description": "reports"
+    },
+    "reservations": {
+      "file": "categories/admin/reservations.json",
+      "endpoint_count": 1,
+      "methods": {
+        "GET": [
+          {
+            "path": "/api/v2/admin/reservations",
+            "summary": "Reservations"
+          }
+        ]
+      },
+      "description": "reservations"
+    },
+    "restocknotification": {
+      "file": "categories/admin/restocknotification.json",
+      "endpoint_count": 2,
+      "methods": {
+        "GET": [
+          {
+            "path": "/api/v2/admin/restocknotification/setting",
+            "summary": "재입고 알림 설정 조회"
+          }
+        ],
+        "PUT": [
+          {
+            "path": "/api/v2/admin/restocknotification/setting",
+            "summary": "재입고 알림 설정 수정"
+          }
+        ]
+      },
+      "description": "restocknotification"
+    },
+    "return": {
+      "file": "categories/admin/return.json",
+      "endpoint_count": 3,
+      "methods": {
+        "GET": [
+          {
+            "path": "/api/v2/admin/return/{claim_code}",
+            "summary": "Return 조회"
+          }
+        ],
+        "POST": [
+          {
+            "path": "/api/v2/admin/return",
+            "summary": "Return 생성"
+          }
+        ],
+        "PUT": [
+          {
+            "path": "/api/v2/admin/return",
+            "summary": "Return 수정"
+          }
+        ]
+      },
+      "description": "return"
+    },
+    "returnrequests": {
+      "file": "categories/admin/returnrequests.json",
+      "endpoint_count": 2,
+      "methods": {
+        "POST": [
+          {
+            "path": "/api/v2/admin/returnrequests",
+            "summary": "Returnrequests 생성"
+          }
+        ],
+        "PUT": [
+          {
+            "path": "/api/v2/admin/returnrequests",
+            "summary": "Returnrequests 수정"
+          }
+        ]
+      },
+      "description": "returnrequests"
+    },
+    "scripttags": {
+      "file": "categories/admin/scripttags.json",
+      "endpoint_count": 6,
+      "methods": {
+        "GET": [
+          {
+            "path": "/api/v2/admin/scripttags",
+            "summary": "Scripttags"
+          },
+          {
+            "path": "/api/v2/admin/scripttags/count",
+            "summary": "Scripttags Count"
+          },
+          {
+            "path": "/api/v2/admin/scripttags/{script_no}",
+            "summary": "Scripttags"
+          }
+        ],
+        "POST": [
+          {
+            "path": "/api/v2/admin/scripttags",
+            "summary": "Scripttags"
+          }
+        ],
+        "PUT": [
+          {
+            "path": "/api/v2/admin/scripttags/{script_no}",
+            "summary": "Scripttags"
+          }
+        ],
+        "DELETE": [
+          {
+            "path": "/api/v2/admin/scripttags/{script_no}",
+            "summary": "Scripttags"
+          }
+        ]
+      },
+      "description": "scripttags"
+    },
+    "seo": {
+      "file": "categories/admin/seo.json",
+      "endpoint_count": 2,
+      "methods": {
+        "GET": [
+          {
+            "path": "/api/v2/admin/seo/setting",
+            "summary": "Retrieve SEO settings"
+          }
+        ],
+        "PUT": [
+          {
+            "path": "/api/v2/admin/seo/setting",
+            "summary": "Update store SEO settings"
+          }
+        ]
+      },
+      "description": "seo"
+    },
+    "serialcoupons": {
+      "file": "categories/admin/serialcoupons.json",
+      "endpoint_count": 5,
+      "methods": {
+        "GET": [
+          {
+            "path": "/api/v2/admin/serialcoupons",
+            "summary": "Retrieve a list of serial coupons"
+          },
+          {
+            "path": "/api/v2/admin/serialcoupons/{coupon_no}/issues",
+            "summary": "Retrieve serial coupon issues"
+          }
+        ],
+        "POST": [
+          {
+            "path": "/api/v2/admin/serialcoupons",
+            "summary": "Create a serial coupon"
+          },
+          {
+            "path": "/api/v2/admin/serialcoupons/{coupon_no}/issues",
+            "summary": "Create a serial coupon issue"
+          }
+        ],
+        "DELETE": [
+          {
+            "path": "/api/v2/admin/serialcoupons/{coupon_no}",
+            "summary": "Delete a serial coupon"
+          }
+        ]
+      },
+      "description": "serialcoupons"
+    },
+    "shipments": {
+      "file": "categories/admin/shipments.json",
+      "endpoint_count": 2,
+      "methods": {
+        "POST": [
+          {
+            "path": "/api/v2/admin/shipments",
+            "summary": "Shipments 생성"
+          }
+        ],
+        "PUT": [
+          {
+            "path": "/api/v2/admin/shipments",
+            "summary": "Shipments 수정"
+          }
+        ]
+      },
+      "description": "shipments"
+    },
+    "shipping": {
+      "file": "categories/admin/shipping.json",
+      "endpoint_count": 4,
+      "methods": {
+        "GET": [
+          {
+            "path": "/api/v2/admin/shipping/suppliers/{supplier_id}",
+            "summary": "Shipping suppliers 조회"
+          },
+          {
+            "path": "/api/v2/admin/shipping",
+            "summary": "Shipping 조회"
+          }
+        ],
+        "PUT": [
+          {
+            "path": "/api/v2/admin/shipping/suppliers/{supplier_id}",
+            "summary": "Shipping suppliers 수정"
+          },
+          {
+            "path": "/api/v2/admin/shipping",
+            "summary": "Shipping 업데이트"
+          }
+        ]
+      },
+      "description": "배송 관리"
+    },
+    "shippingmanager": {
+      "file": "categories/admin/shippingmanager.json",
+      "endpoint_count": 1,
+      "methods": {
+        "GET": [
+          {
+            "path": "/api/v2/admin/shippingmanager",
+            "summary": "Retrieve shipping manager settings"
+          }
+        ]
+      },
+      "description": "shippingmanager"
+    },
+    "shippingorigins": {
+      "file": "categories/admin/shippingorigins.json",
+      "endpoint_count": 5,
+      "methods": {
+        "GET": [
+          {
+            "path": "/api/v2/admin/shippingorigins",
+            "summary": "Shipping origins 조회"
+          },
+          {
+            "path": "/api/v2/admin/shippingorigins/{origin_code}",
+            "summary": "Shipping origin 조회"
+          }
+        ],
+        "POST": [
+          {
+            "path": "/api/v2/admin/shippingorigins",
+            "summary": "Shipping origin 생성"
+          }
+        ],
+        "PUT": [
+          {
+            "path": "/api/v2/admin/shippingorigins/{origin_code}",
+            "summary": "Shipping origin 업데이트"
+          }
+        ],
+        "DELETE": [
+          {
+            "path": "/api/v2/admin/shippingorigins/{origin_code}",
+            "summary": "Shipping origin 삭제"
+          }
+        ]
+      },
+      "description": "shippingorigins"
+    },
+    "shops": {
+      "file": "categories/admin/shops.json",
+      "endpoint_count": 2,
+      "methods": {
+        "GET": [
+          {
+            "path": "/api/v2/admin/shops",
+            "summary": "Retrieve shops"
+          },
+          {
+            "path": "/api/v2/admin/shops/{shop_no}",
+            "summary": "Retrieve specific shop"
+          }
+        ]
+      },
+      "description": "멀티쇼핑몰 관리"
+    },
+    "sms": {
+      "file": "categories/admin/sms.json",
+      "endpoint_count": 6,
+      "methods": {
+        "GET": [
+          {
+            "path": "/api/v2/admin/sms/setting",
+            "summary": "Retrieve SMS settings"
+          },
+          {
+            "path": "/api/v2/admin/sms/balance",
+            "summary": "Sms balance"
+          },
+          {
+            "path": "/api/v2/admin/sms/receivers",
+            "summary": "Sms receivers"
+          },
+          {
+            "path": "/api/v2/admin/sms/senders",
+            "summary": "Sms senders"
+          }
+        ],
+        "PUT": [
+          {
+            "path": "/api/v2/admin/sms/setting",
+            "summary": "Update SMS settings"
+          }
+        ],
+        "POST": [
+          {
+            "path": "/api/v2/admin/sms",
+            "summary": "SMS 발송"
+          }
+        ]
+      },
+      "description": "sms"
+    },
+    "socials": {
+      "file": "categories/admin/socials.json",
+      "endpoint_count": 7,
+      "methods": {
+        "GET": [
+          {
+            "path": "/api/v2/admin/socials/apple",
+            "summary": "Retrieve Apple social settings"
+          },
+          {
+            "path": "/api/v2/admin/socials/kakaosync",
+            "summary": "Retrieve KakaoSync settings"
+          },
+          {
+            "path": "/api/v2/admin/socials/naverlogin",
+            "summary": "Socials naverlogin"
+          },
+          {
+            "path": "/api/v2/admin/socials/navershopping",
+            "summary": "Socials navershopping"
+          }
+        ],
+        "PUT": [
+          {
+            "path": "/api/v2/admin/socials/apple",
+            "summary": "Update Apple social settings"
+          },
+          {
+            "path": "/api/v2/admin/socials/kakaosync",
+            "summary": "Update KakaoSync settings"
+          },
+          {
+            "path": "/api/v2/admin/socials/naverlogin",
+            "summary": "Socials naverlogin"
+          }
+        ]
+      },
+      "description": "socials"
+    },
+    "store": {
+      "file": "categories/admin/store.json",
+      "endpoint_count": 2,
+      "methods": {
+        "GET": [
+          {
+            "path": "/api/v2/admin/store",
+            "summary": "Store"
+          },
+          {
+            "path": "/api/v2/admin/store/accounts",
+            "summary": "Store accounts"
+          }
+        ]
+      },
+      "description": "쇼핑몰 기본 정보"
+    },
+    "subscription": {
+      "file": "categories/admin/subscription.json",
+      "endpoint_count": 8,
+      "methods": {
+        "GET": [
+          {
+            "path": "/api/v2/admin/subscription/shipments/setting",
+            "summary": "Subscription shipments setting"
+          },
+          {
+            "path": "/api/v2/admin/subscription/shipments",
+            "summary": "Subscription shipments"
+          }
+        ],
+        "POST": [
+          {
+            "path": "/api/v2/admin/subscription/shipments/setting",
+            "summary": "Create subscription shipment setting"
+          },
+          {
+            "path": "/api/v2/admin/subscription/shipments",
+            "summary": "Subscription shipments"
+          }
+        ],
+        "PUT": [
+          {
+            "path": "/api/v2/admin/subscription/shipments/setting/{subscription_no}",
+            "summary": "Update subscription shipment setting"
+          },
+          {
+            "path": "/api/v2/admin/subscription/shipments/{subscription_id}",
+            "summary": "Subscription shipments"
+          },
+          {
+            "path": "/api/v2/admin/subscription/shipments/{subscription_id}/items",
+            "summary": "Subscription shipments items"
+          }
+        ],
+        "DELETE": [
+          {
+            "path": "/api/v2/admin/subscription/shipments/setting/{subscription_no}",
+            "summary": "Delete subscription shipment setting"
+          }
+        ]
+      },
+      "description": "subscription"
+    },
+    "suppliers": {
+      "file": "categories/admin/suppliers.json",
+      "endpoint_count": 17,
+      "methods": {
+        "GET": [
+          {
+            "path": "/api/v2/admin/suppliers",
+            "summary": "Suppliers 목록 조회"
+          },
+          {
+            "path": "/api/v2/admin/suppliers/count",
+            "summary": "Suppliers 수 조회"
+          },
+          {
+            "path": "/api/v2/admin/suppliers/{supplier_code}",
+            "summary": "Supplier 상세 조회"
+          },
+          {
+            "path": "/api/v2/admin/suppliers/users",
+            "summary": "Suppliers users"
+          },
+          {
+            "path": "/api/v2/admin/suppliers/users/count",
+            "summary": "Count suppliers users"
+          },
+          {
+            "path": "/api/v2/admin/suppliers/users/{user_id}",
+            "summary": "Get supplier user by ID"
+          },
+          {
+            "path": "/api/v2/admin/suppliers/users/{supplier_id}/regionalsurcharges",
+            "summary": "Get regional surcharges"
+          },
+          {
+            "path": "/api/v2/admin/suppliers/users/{supplier_id}/regionalsurcharges/setting",
+            "summary": "Suppliers users regionalsurcharges setting 조회"
+          }
+        ],
+        "POST": [
+          {
+            "path": "/api/v2/admin/suppliers",
+            "summary": "Supplier 생성"
+          },
+          {
+            "path": "/api/v2/admin/suppliers/users",
+            "summary": "Create supplier user"
+          },
+          {
+            "path": "/api/v2/admin/suppliers/users/{supplier_id}/regionalsurcharges",
+            "summary": "Create regional surcharge"
+          }
+        ],
+        "PUT": [
+          {
+            "path": "/api/v2/admin/suppliers/{supplier_code}",
+            "summary": "Supplier 수정"
+          },
+          {
+            "path": "/api/v2/admin/suppliers/users/{user_id}",
+            "summary": "Update supplier user"
+          },
+          {
+            "path": "/api/v2/admin/suppliers/users/{supplier_id}/regionalsurcharges/setting",
+            "summary": "Suppliers users regionalsurcharges setting 수정"
+          }
+        ],
+        "DELETE": [
+          {
+            "path": "/api/v2/admin/suppliers/{supplier_code}",
+            "summary": "Supplier 삭제"
+          },
+          {
+            "path": "/api/v2/admin/suppliers/users/{user_id}",
+            "summary": "Delete supplier user"
+          },
+          {
+            "path": "/api/v2/admin/suppliers/users/{supplier_id}/regionalsurcharges/{regional_surcharge_id}",
+            "summary": "Delete regional surcharge"
+          }
+        ]
+      },
+      "description": "suppliers"
+    },
+    "taxmanager": {
+      "file": "categories/admin/taxmanager.json",
+      "endpoint_count": 1,
+      "methods": {
+        "GET": [
+          {
+            "path": "/api/v2/admin/taxmanager",
+            "summary": "Taxmanager"
+          }
+        ]
+      },
+      "description": "taxmanager"
+    },
+    "themes": {
+      "file": "categories/admin/themes.json",
+      "endpoint_count": 7,
+      "methods": {
+        "GET": [
+          {
+            "path": "/api/v2/admin/themes",
+            "summary": ""
+          },
+          {
+            "path": "/api/v2/admin/themes/count",
+            "summary": ""
+          },
+          {
+            "path": "/api/v2/admin/themes/{skin_no}",
+            "summary": ""
+          },
+          {
+            "path": "/api/v2/admin/themes/{skin_no}/pages",
+            "summary": ""
+          }
+        ],
+        "POST": [
+          {
+            "path": "/api/v2/admin/themes/{skin_no}/pages",
+            "summary": ""
+          }
+        ],
+        "PUT": [
+          {
+            "path": "/api/v2/admin/themes/{skin_no}/pages",
+            "summary": ""
+          }
+        ],
+        "DELETE": [
+          {
+            "path": "/api/v2/admin/themes/{skin_no}/pages",
+            "summary": ""
+          }
+        ]
+      },
+      "description": "themes"
+    },
+    "translations": {
+      "file": "categories/admin/translations.json",
+      "endpoint_count": 9,
+      "methods": {
+        "GET": [
+          {
+            "path": "/api/v2/admin/translations/categories",
+            "summary": "Translations categories"
+          },
+          {
+            "path": "/api/v2/admin/translations/products",
+            "summary": "Translations products"
+          },
+          {
+            "path": "/api/v2/admin/translations/store",
+            "summary": "Translations store"
+          },
+          {
+            "path": "/api/v2/admin/translations/themes",
+            "summary": "Translations themes"
+          },
+          {
+            "path": "/api/v2/admin/translations/themes/{skin_no}",
+            "summary": "Translations themes"
+          }
+        ],
+        "PUT": [
+          {
+            "path": "/api/v2/admin/translations/categories/{category_no}",
+            "summary": "Translations categories"
+          },
+          {
+            "path": "/api/v2/admin/translations/products/{product_no}",
+            "summary": "Translations products"
+          },
+          {
+            "path": "/api/v2/admin/translations/store",
+            "summary": "Translations store"
+          },
+          {
+            "path": "/api/v2/admin/translations/themes/{skin_no}",
+            "summary": "Translations themes"
+          }
+        ]
+      },
+      "description": "translations"
+    },
+    "trends": {
+      "file": "categories/admin/trends.json",
+      "endpoint_count": 2,
+      "methods": {
+        "GET": [
+          {
+            "path": "/api/v2/admin/trends",
+            "summary": "Retrieve trends"
+          },
+          {
+            "path": "/api/v2/admin/trends/count",
+            "summary": "Retrieve a count of trends"
+          }
+        ]
+      },
+      "description": "trends"
+    },
+    "unpaidorders": {
+      "file": "categories/admin/unpaidorders.json",
+      "endpoint_count": 1,
+      "methods": {
+        "GET": [
+          {
+            "path": "/api/v2/admin/unpaidorders",
+            "summary": "Unpaidorders"
+          }
+        ]
+      },
+      "description": "unpaidorders"
+    },
+    "urgentinquiry": {
+      "file": "categories/admin/urgentinquiry.json",
+      "endpoint_count": 4,
+      "methods": {
+        "GET": [
+          {
+            "path": "/api/v2/admin/urgentinquiry",
+            "summary": "Urgentinquiry"
+          },
+          {
+            "path": "/api/v2/admin/urgentinquiry/{article_no}/reply",
+            "summary": "Retrieve urgent inquiry reply"
+          }
+        ],
+        "POST": [
+          {
+            "path": "/api/v2/admin/urgentinquiry/{article_no}/reply",
+            "summary": "Create urgent inquiry reply"
+          }
+        ],
+        "PUT": [
+          {
+            "path": "/api/v2/admin/urgentinquiry/{article_no}/reply",
+            "summary": "Update urgent inquiry reply"
+          }
+        ]
+      },
+      "description": "urgentinquiry"
+    },
+    "users": {
+      "file": "categories/admin/users.json",
+      "endpoint_count": 2,
+      "methods": {
+        "GET": [
+          {
+            "path": "/api/v2/admin/users",
+            "summary": "Users"
+          },
+          {
+            "path": "/api/v2/admin/users/{user_id}",
+            "summary": "User Details"
+          }
+        ]
+      },
+      "description": "users"
+    },
+    "webhooks": {
+      "file": "categories/admin/webhooks.json",
+      "endpoint_count": 3,
+      "methods": {
+        "GET": [
+          {
+            "path": "/api/v2/admin/webhooks/logs",
+            "summary": "Webhooks logs"
+          },
+          {
+            "path": "/api/v2/admin/webhooks/setting",
+            "summary": "Webhooks setting"
+          }
+        ],
+        "PUT": [
+          {
+            "path": "/api/v2/admin/webhooks/setting",
+            "summary": "Webhooks setting"
+          }
+        ]
+      },
+      "description": "webhooks"
+    }
+  },
+  "front_api": {
+    "categories": {
+      "file": "categories/front/categories.json",
+      "endpoint_count": 5,
+      "methods": {
+        "GET": [
+          {
+            "path": "/api/v2/categories",
+            "summary": "카테고리 목록 조회"
+          },
+          {
+            "path": "/api/v2/categories/{category_no}/products",
+            "summary": "카테고리 상품 조회"
+          },
+          {
+            "path": "/api/v2/categories/{category_no}/products/count",
+            "summary": "카테고리 상품 수 조회"
+          },
+          {
+            "path": "/api/v2/categories/count",
+            "summary": "Categories Count"
+          },
+          {
+            "path": "/api/v2/categories/{category_no}",
+            "summary": "Category Detail"
+          }
+        ]
+      },
+      "description": "카테고리 관리"
+    },
+    "personal": {
+      "file": "categories/front/personal.json",
+      "endpoint_count": 2,
+      "methods": {
+        "GET": [
+          {
+            "path": "/api/v2/mains/{display_group}/products",
+            "summary": "메인 상품 조회"
+          }
+        ],
+        "POST": [
+          {
+            "path": "/api/v2/carts",
+            "summary": "Carts"
+          }
+        ]
+      },
+      "description": "개인화 정보 (장바구니, 메인화면)"
+    },
+    "products": {
+      "file": "categories/front/products.json",
+      "endpoint_count": 18,
+      "methods": {
+        "GET": [
+          {
+            "path": "/api/v2/products?created_start_date=2018-01-03&created_end_date=2018-02-03",
+            "summary": "검색조건 추가"
+          },
+          {
+            "path": "/api/v2/products?product_no=11,12,13",
+            "summary": "콤마로 여러 건을 검색"
+          },
+          {
+            "path": "/api/v2/products?shop_no=2",
+            "summary": "멀티쇼핑몰 정보 조회"
+          },
+          {
+            "path": "/api/v2/products/128",
+            "summary": "상세 조회와 단건 조회"
+          },
+          {
+            "path": "/api/v2/products",
+            "summary": "Pagination"
+          },
+          {
+            "path": "/api/v2/products/570?embed=variants,inventories",
+            "summary": "하위 리소스 조회"
+          },
+          {
+            "path": "/api/v2/products/count",
+            "summary": ""
+          },
+          {
+            "path": "/api/v2/products/{product_no}",
+            "summary": ""
+          },
+          {
+            "path": "/api/v2/products/{product_no}/decorationimages",
+            "summary": "Products decorationimages"
+          },
+          {
+            "path": "/api/v2/products/{product_no}/discountprice",
+            "summary": "Products discountprice"
+          },
+          {
+            "path": "/api/v2/products/{product_no}/hits/count",
+            "summary": "Products hits"
+          },
+          {
+            "path": "/api/v2/products/{product_no}/icons",
+            "summary": "Products icons"
+          },
+          {
+            "path": "/api/v2/products/{product_no}/options",
+            "summary": "Products options"
+          },
+          {
+            "path": "/api/v2/products/{product_no}/variants",
+            "summary": "상품의 품목 조회"
+          },
+          {
+            "path": "/api/v2/products/{product_no}/variants/{variant_code}",
+            "summary": "특정 품목 조회"
+          },
+          {
+            "path": "/api/v2/products/{product_no}/variants/{variant_code}/inventories",
+            "summary": "품목 재고 조회"
+          },
+          {
+            "path": "/api/v2/productsdetail/{product_no}",
+            "summary": "Productsdetail"
+          },
+          {
+            "path": "/api/v2/products/{product_no}/carts/count",
+            "summary": "Products carts"
+          }
+        ]
+      },
+      "description": "상품 관리 (등록, 수정, 조회, 삭제)"
+    }
+  },
+  "quick_reference": {
+    "products": {
+      "api_type": "admin",
+      "file": "categories/admin/products.json",
+      "common_operations": {
+        "list": {
+          "method": "GET",
+          "path": "/api/v2/admin/products",
+          "summary": "상품 목록 조회"
+        },
+        "get": {
+          "method": "GET",
+          "path": "/api/v2/admin/products/128",
+          "summary": "상세 조회와 단건 조회"
+        },
+        "update": {
+          "method": "PUT",
+          "path": "/api/v2/admin/products/properties/setting",
+          "summary": "Products properties setting"
+        },
+        "create": {
+          "method": "POST",
+          "path": "/api/v2/admin/products",
+          "summary": "Create a new product"
+        },
+        "delete": {
+          "method": "DELETE",
+          "path": "/api/v2/admin/products/{product_no}",
+          "summary": "Delete product"
+        }
+      }
+    },
+    "categories": {
+      "api_type": "admin",
+      "file": "categories/admin/categories.json",
+      "common_operations": {
+        "list": {
+          "method": "GET",
+          "path": "/api/v2/admin/categories/properties/setting",
+          "summary": "Retrieve categories properties settings"
+        },
+        "update": {
+          "method": "PUT",
+          "path": "/api/v2/admin/categories/properties/setting",
+          "summary": "Update categories properties settings"
+        },
+        "get": {
+          "method": "GET",
+          "path": "/api/v2/admin/categories/{category_no}/products",
+          "summary": "Retrieve products in a category"
+        },
+        "create": {
+          "method": "POST",
+          "path": "/api/v2/admin/categories/{category_no}/products",
+          "summary": "Add a product to a category"
+        },
+        "delete": {
+          "method": "DELETE",
+          "path": "/api/v2/admin/categories/{category_no}/products/{product_no}",
+          "summary": "Remove a product from a category"
+        }
+      }
+    },
+    "orders": {
+      "api_type": "admin",
+      "file": "categories/admin/orders.json",
+      "common_operations": {
+        "list": {
+          "method": "GET",
+          "path": "/api/v2/admin/orders/setting",
+          "summary": "Orders setting 조회"
+        },
+        "update": {
+          "method": "PUT",
+          "path": "/api/v2/admin/orders/setting",
+          "summary": "Orders setting 수정"
+        },
+        "get": {
+          "method": "GET",
+          "path": "/api/v2/admin/orders/{order_id}",
+          "summary": ""
+        },
+        "delete": {
+          "method": "DELETE",
+          "path": "/api/v2/admin/orders/{order_id}/autocalculation",
+          "summary": "Remove auto calculation setting of a specific order"
+        },
+        "create": {
+          "method": "POST",
+          "path": "/api/v2/admin/orders/{order_id}/cancellation",
+          "summary": "Orders cancellation"
+        }
+      }
+    },
+    "customers": {
+      "api_type": "admin",
+      "file": "categories/admin/customers.json",
+      "common_operations": {
+        "list": {
+          "method": "GET",
+          "path": "/api/v2/admin/customers/setting",
+          "summary": "Retrieve customer settings"
+        },
+        "update": {
+          "method": "PUT",
+          "path": "/api/v2/admin/customers/setting",
+          "summary": "Update customer settings"
+        },
+        "delete": {
+          "method": "DELETE",
+          "path": "/api/v2/admin/customers/{member_id}",
+          "summary": "Delete Customer"
+        },
+        "get": {
+          "method": "GET",
+          "path": "/api/v2/admin/customers/{member_id}/autoupdate",
+          "summary": "Customers autoupdate"
+        },
+        "create": {
+          "method": "POST",
+          "path": "/api/v2/admin/customers/{member_id}/memos",
+          "summary": "Create customer memo"
+        }
+      }
+    },
+    "shipping": {
+      "api_type": "admin",
+      "file": "categories/admin/shipping.json",
+      "common_operations": {
+        "get": {
+          "method": "GET",
+          "path": "/api/v2/admin/shipping/suppliers/{supplier_id}",
+          "summary": "Shipping suppliers 조회"
+        },
+        "update": {
+          "method": "PUT",
+          "path": "/api/v2/admin/shipping/suppliers/{supplier_id}",
+          "summary": "Shipping suppliers 수정"
+        },
+        "list": {
+          "method": "GET",
+          "path": "/api/v2/admin/shipping",
+          "summary": "Shipping 조회"
+        }
+      }
+    },
+    "coupons": {
+      "api_type": "admin",
+      "file": "categories/admin/coupons.json",
+      "common_operations": {
+        "list": {
+          "method": "GET",
+          "path": "/api/v2/admin/coupons/setting",
+          "summary": "Retrieve coupon settings"
+        },
+        "update": {
+          "method": "PUT",
+          "path": "/api/v2/admin/coupons/setting",
+          "summary": "Update coupon settings"
+        },
+        "create": {
+          "method": "POST",
+          "path": "/api/v2/admin/coupons",
+          "summary": "Create a coupon"
+        },
+        "get": {
+          "method": "GET",
+          "path": "/api/v2/admin/coupons/{coupon_no}/issues",
+          "summary": "Coupons issues 조회"
+        }
+      }
+    },
+    "store": {
+      "api_type": "admin",
+      "file": "categories/admin/store.json",
+      "common_operations": {
+        "list": {
+          "method": "GET",
+          "path": "/api/v2/admin/store",
+          "summary": "Store"
+        }
+      }
+    }
+  }
+}

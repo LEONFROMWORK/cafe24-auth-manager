@@ -1,0 +1,177 @@
+{
+  "category": "customers",
+  "api_type": "admin",
+  "endpoint_count": 24,
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/customers/setting",
+      "summary": "Retrieve customer settings",
+      "description": "회원관련 설정 시 회원가입약관을 조회할 수 있습니다."
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/admin/customers/setting",
+      "summary": "Update customer settings",
+      "description": "회원관련 설정 시 회원가입약관을 조회할 수 있습니다."
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/customers",
+      "summary": "Customers",
+      "description": "회원(Customer)은 쇼핑몰의 상품을 구매하는 고객을 뜻합니다."
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/v2/admin/customers/{member_id}",
+      "summary": "Delete Customer",
+      "description": "특정 회원을 삭제합니다."
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/customers/{member_id}/autoupdate",
+      "summary": "Customers autoupdate",
+      "description": "회원 별 회원등급 자동변경 정보(다음 예상 등급)를 조회할 수 있습니다."
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/customers/{member_id}/memos/count",
+      "summary": "Customers memos count",
+      "description": "회원 메모 수를 조회합니다."
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/customers/{member_id}/memos",
+      "summary": "Customers memos list",
+      "description": "회원 메모 목록을 조회합니다."
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/customers/{member_id}/memos/{memo_no}",
+      "summary": "Customers memo detail",
+      "description": "특정 회원 메모를 조회합니다."
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/admin/customers/{member_id}/memos",
+      "summary": "Create customer memo",
+      "description": "회원 메모를 등록합니다."
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/admin/customers/{member_id}/memos/{memo_no}",
+      "summary": "Update customer memo",
+      "description": "특정 회원 메모를 수정합니다."
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/v2/admin/customers/{member_id}/memos/{memo_no}",
+      "summary": "Delete customer memo",
+      "description": "특정 회원 메모를 삭제합니다."
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/customers/{member_id}/paymentinformation",
+      "summary": "Retrieve a customer's list of payment information",
+      "description": "회원이 결제한 결제수단에 대해 목록조회, 삭제가 가능합니다."
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/v2/admin/customers/{member_id}/paymentinformation",
+      "summary": "Delete customer's payment information",
+      "description": "회원이 결제한 결제수단에 대해 목록조회, 삭제가 가능합니다."
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/v2/admin/customers/{member_id}/paymentinformation/{payment_method_id}",
+      "summary": "Delete specific payment method",
+      "description": "회원이 결제한 결제수단에 대해 목록조회, 삭제가 가능합니다."
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/customers/{member_id}/plusapp",
+      "summary": "Retrieve customer's plusapp information",
+      "description": "쇼핑몰 회원의 플러스앱 설치 정보를 조회할 수 있습니다."
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/customers/{member_id}/social",
+      "summary": "Retrieve customer's social information",
+      "description": ""
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/customers/properties",
+      "summary": "Customers properties 조회",
+      "description": "회원가입항목 설정을 관리 할 수 있습니다. 기본회원가입항목, 상세회원가입항목 사용여부 확인이 가능하여 회원가입 시 필요항목 및 추가항목(생년월일, 결혼기념일, 배우자 생일 등) 설정을 조회하거나 수정할 수 있습니다."
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/admin/customers/properties",
+      "summary": "Customers properties 수정",
+      "description": "회원가입항목 설정을 관리 할 수 있습니다. 기본회원가입항목, 상세회원가입항목 사용여부 확인이 가능하여 회원가입 시 필요항목 및 추가항목(생년월일, 결혼기념일, 배우자 생일 등) 설정을 조회하거나 수정할 수 있습니다."
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/customers/{member_id}/coupons",
+      "summary": "회원 쿠폰 조회",
+      "description": "회원에게 발급된 쿠폰을 조회하거나 삭제할 수 있습니다",
+      "parameters": [],
+      "responses": {}
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/customers/{member_id}/coupons/count",
+      "summary": "회원 쿠폰 수 조회",
+      "description": "",
+      "parameters": [],
+      "responses": {}
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/v2/admin/customers/{member_id}/coupons/{coupon_no}",
+      "summary": "회원 쿠폰 삭제",
+      "description": "",
+      "parameters": [],
+      "responses": {}
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/customers/{member_id}/wishlist/count",
+      "summary": "회원 관심상품 수 조회",
+      "description": "회원의 관심상품 수를 조회할 수 있는 API입니다",
+      "parameters": [
+        {
+          "name": "member_id",
+          "in": "path",
+          "type": "string",
+          "required": true,
+          "description": "회원 ID"
+        }
+      ],
+      "responses": {}
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/customers/{member_id}/wishlist",
+      "summary": "회원 관심상품 목록 조회",
+      "description": "회원의 관심상품 목록을 조회할 수 있는 API입니다",
+      "parameters": [
+        {
+          "name": "member_id",
+          "in": "path",
+          "type": "string",
+          "required": true,
+          "description": "회원 ID"
+        }
+      ],
+      "responses": {}
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/admin/customers/{member_id}/invitation",
+      "summary": "Customers invitation",
+      "description": "회원 초대(invitation)는 계정을 활성화하기 위해 SMS, 이메일 등으로 초대 메시지를 발송하는 기능입니다."
+    }
+  ]
+}

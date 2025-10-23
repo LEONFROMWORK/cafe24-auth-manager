@@ -1,0 +1,41 @@
+{
+  "category": "categories",
+  "api_type": "front",
+  "endpoint_count": 5,
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/api/v2/categories",
+      "summary": "카테고리 목록 조회",
+      "description": "쇼핑몰의 카테고리 목록을 조회합니다",
+      "parameters": [],
+      "responses": {}
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/categories/{category_no}/products",
+      "summary": "카테고리 상품 조회",
+      "description": "카테고리 상품 목록을 조회합니다",
+      "parameters": [],
+      "responses": {}
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/categories/{category_no}/products/count",
+      "summary": "카테고리 상품 수 조회",
+      "description": "카테고리 상품의 개수를 조회합니다",
+      "parameters": [],
+      "responses": {}
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/categories/count",
+      "summary": "Categories Count"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/categories/{category_no}",
+      "summary": "Category Detail"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "category": "exchangerequests",
+  "api_type": "admin",
+  "endpoint_count": 2,
+  "endpoints": [
+    {
+      "method": "POST",
+      "path": "/api/v2/admin/exchangerequests",
+      "summary": "Exchange Requests 생성"
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/admin/exchangerequests",
+      "summary": "Exchange Requests 수정"
+    }
+  ]
+}

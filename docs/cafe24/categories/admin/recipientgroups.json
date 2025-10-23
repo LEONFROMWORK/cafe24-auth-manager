@@ -1,0 +1,37 @@
+{
+  "category": "recipientgroups",
+  "api_type": "admin",
+  "endpoint_count": 5,
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/recipientgroups",
+      "summary": "Recipientgroups 조회",
+      "description": "발송 그룹을 조회합니다."
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/recipientgroups/{group_no}",
+      "summary": "Recipientgroup 상세 조회",
+      "description": "특정 발송 그룹을 조회합니다."
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/admin/recipientgroups",
+      "summary": "Recipientgroup 생성",
+      "description": "새로운 발송 그룹을 생성합니다."
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/admin/recipientgroups/{group_no}",
+      "summary": "Recipientgroup 수정",
+      "description": "기존 발송 그룹을 수정합니다."
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/v2/admin/recipientgroups/{group_no}",
+      "summary": "Recipientgroup 삭제",
+      "description": "특정 발송 그룹을 삭제합니다."
+    }
+  ]
+}

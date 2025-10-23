@@ -1,0 +1,13 @@
+{
+  "category": "reservations",
+  "api_type": "admin",
+  "endpoint_count": 1,
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/reservations",
+      "summary": "Reservations",
+      "description": "예약주문관련 기능을 제공합니다."
+    }
+  ]
+}

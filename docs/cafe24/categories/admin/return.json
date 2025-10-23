@@ -1,0 +1,25 @@
+{
+  "category": "return",
+  "api_type": "admin",
+  "endpoint_count": 3,
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/return/{claim_code}",
+      "summary": "Return 조회",
+      "description": "반품 리소스는 반품접수 이후부터 반품완료까지의 주문 상태를 조회할 수 있습니다."
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/admin/return",
+      "summary": "Return 생성",
+      "description": "반품 리소스에서는 반품 정보를 조회하거나 반품을 처리할 수 있습니다."
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/admin/return",
+      "summary": "Return 수정",
+      "description": "반품 리소스에서는 반품 정보를 조회하거나 반품을 처리할 수 있습니다."
+    }
+  ]
+}

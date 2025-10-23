@@ -1,0 +1,48 @@
+{
+  "category": "socials",
+  "api_type": "admin",
+  "endpoint_count": 7,
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/socials/apple",
+      "summary": "Retrieve Apple social settings",
+      "description": "애플아이디 로그인(Socials apple)은 쇼핑몰 이용 고객의 애플아이디 로그인에 관한 기능입니다."
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/admin/socials/apple",
+      "summary": "Update Apple social settings",
+      "description": "애플아이디 로그인(Socials apple)은 쇼핑몰 이용 고객의 애플아이디 로그인에 관한 기능입니다."
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/socials/kakaosync",
+      "summary": "Retrieve KakaoSync settings",
+      "description": "카카오싱크 SNS(Socials kakaosync)는 쇼핑몰의 카카오싱크에 대한 설정을 조회하거나 설정할 수 있는 기능입니다."
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/admin/socials/kakaosync",
+      "summary": "Update KakaoSync settings",
+      "description": "카카오싱크 SNS(Socials kakaosync)는 쇼핑몰의 카카오싱크에 대한 설정을 조회하거나 설정할 수 있는 기능입니다."
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/socials/naverlogin",
+      "summary": "Socials naverlogin",
+      "description": "네이버 로그인 설정정보를 조회하고 설정정보를 변경하는 리소스입니다"
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/admin/socials/naverlogin",
+      "summary": "Socials naverlogin",
+      "description": "네이버 로그인 설정정보를 조회하고 설정정보를 변경하는 리소스입니다"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/socials/navershopping",
+      "summary": "Socials navershopping"
+    }
+  ]
+}

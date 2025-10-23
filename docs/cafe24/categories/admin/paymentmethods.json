@@ -1,0 +1,24 @@
+{
+  "category": "paymentmethods",
+  "api_type": "admin",
+  "endpoint_count": 3,
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/paymentmethods",
+      "summary": "Paymentmethods 조회"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/paymentmethods/{code}/paymentproviders",
+      "summary": "Retrieve payment providers",
+      "description": "쇼핑몰에 설정된 결제수단의 정보를 조회하거나 결제수단의 노출여부를 수정할 수 있습니다."
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/admin/paymentmethods/{code}/paymentproviders/{name}",
+      "summary": "Update payment provider visibility",
+      "description": "쇼핑몰에 설정된 결제수단의 정보를 조회하거나 결제수단의 노출여부를 수정할 수 있습니다."
+    }
+  ]
+}

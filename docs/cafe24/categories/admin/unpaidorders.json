@@ -1,0 +1,12 @@
+{
+  "category": "unpaidorders",
+  "api_type": "admin",
+  "endpoint_count": 1,
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/unpaidorders",
+      "summary": "Unpaidorders"
+    }
+  ]
+}

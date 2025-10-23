@@ -1,0 +1,88 @@
+{
+  "category": "mains",
+  "api_type": "admin",
+  "endpoint_count": 14,
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/mains/properties/setting",
+      "summary": "Mains properties setting 조회",
+      "description": "메인 화면에 표시되는 항목의 추가 설정을 조회하고 수정할 수 있습니다."
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/admin/mains/properties/setting",
+      "summary": "Mains properties setting 수정",
+      "description": "메인 화면에 표시되는 항목의 추가 설정을 조회하고 수정할 수 있습니다."
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/mains/{display_group}/products",
+      "summary": "Mains products",
+      "description": "특정 메인분류에 배치된 상품을 목록으로 조회하거나 상품등록, 수정, 삭제할 수 있습니다."
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/mains/{display_group}/products/count",
+      "summary": "Mains products",
+      "description": "특정 메인분류에 배치된 상품을 목록으로 조회하거나 상품등록, 수정, 삭제할 수 있습니다."
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/admin/mains/{display_group}/products",
+      "summary": "Mains products",
+      "description": "특정 메인분류에 배치된 상품을 목록으로 조회하거나 상품등록, 수정, 삭제할 수 있습니다."
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/admin/mains/{display_group}/products",
+      "summary": "Mains products",
+      "description": "특정 메인분류에 배치된 상품을 목록으로 조회하거나 상품등록, 수정, 삭제할 수 있습니다."
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/v2/admin/mains/{display_group}/products/{product_no}",
+      "summary": "Mains products",
+      "description": "특정 메인분류에 배치된 상품을 목록으로 조회하거나 상품등록, 수정, 삭제할 수 있습니다."
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/mains/properties",
+      "summary": "Mains properties",
+      "description": "메인 화면에 표시되는 항목을 조회하고 수정할 수 있습니다."
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/admin/mains/properties",
+      "summary": "Mains properties",
+      "description": "메인 화면에 표시되는 항목을 조회하고 수정할 수 있습니다."
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/admin/mains/properties",
+      "summary": "Mains properties",
+      "description": "메인 화면에 표시되는 항목을 조회하고 수정할 수 있습니다."
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/mains",
+      "summary": "Retrieve main categories",
+      "description": "메인분류(Mains)는 쇼핑몰의 상품을 메인화면에 진열할 수 있는 기능입니다."
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/admin/mains",
+      "summary": "Add main category"
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/admin/mains/{display_group}",
+      "summary": "Update main category"
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/v2/admin/mains/{display_group}",
+      "summary": "Delete main category"
+    }
+  ]
+}

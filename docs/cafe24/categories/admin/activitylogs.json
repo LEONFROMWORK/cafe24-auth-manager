@@ -1,0 +1,19 @@
+{
+  "category": "activitylogs",
+  "api_type": "admin",
+  "endpoint_count": 2,
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/activitylogs",
+      "summary": "Activitylogs 조회",
+      "description": "활동로그(Activitylog)는 쇼핑몰 관리자가 쇼핑몰 어드민에서 진행한 운영 활동을 기록한 내역입니다."
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/activitylogs/{process_no}",
+      "summary": "특정 Activitylog 조회",
+      "description": "활동로그 리소스를 사용하여 쇼핑몰의 활동로그를 생성하거나 조회할 수 있습니다."
+    }
+  ]
+}

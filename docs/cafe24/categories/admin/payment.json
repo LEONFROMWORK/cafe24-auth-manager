@@ -1,0 +1,19 @@
+{
+  "category": "payment",
+  "api_type": "admin",
+  "endpoint_count": 2,
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/payment/setting",
+      "summary": "Payment setting",
+      "description": "결제수단의 설정정보를 관리하는 기능을 제공합니다"
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/admin/payment/setting",
+      "summary": "Payment setting",
+      "description": "결제수단의 설정정보를 관리하는 기능을 제공합니다"
+    }
+  ]
+}

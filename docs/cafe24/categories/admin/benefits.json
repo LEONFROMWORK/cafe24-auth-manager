@@ -1,0 +1,59 @@
+{
+  "category": "benefits",
+  "api_type": "admin",
+  "endpoint_count": 8,
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/benefits/setting",
+      "summary": "Benefits setting 조회",
+      "description": "혜택 설정 조회",
+      "parameters": [],
+      "responses": {}
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/admin/benefits/setting",
+      "summary": "Benefits setting 수정",
+      "description": "혜택 설정 수정",
+      "parameters": [],
+      "responses": {}
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/benefits",
+      "summary": "Retrieve a list of customer benefits",
+      "description": "혜택(Benefits)은 쇼핑몰 고객에게 제공하는 증정 또는 할인과 같은 고객 혜택입니다."
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/benefits/count",
+      "summary": "Retrieve a count of customer benefits",
+      "description": ""
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/benefits/{benefit_no}",
+      "summary": "Retrieve a customer benefit",
+      "description": ""
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/admin/benefits",
+      "summary": "Create a customer benefit",
+      "description": ""
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/admin/benefits/{benefit_no}",
+      "summary": "Update a customer benefit",
+      "description": ""
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/v2/admin/benefits/{benefit_no}",
+      "summary": "Delete a customer benefit",
+      "description": ""
+    }
+  ]
+}

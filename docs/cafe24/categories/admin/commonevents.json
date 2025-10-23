@@ -1,0 +1,31 @@
+{
+  "category": "commonevents",
+  "api_type": "admin",
+  "endpoint_count": 4,
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/commonevents",
+      "summary": "Retrieve common events",
+      "description": ""
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/admin/commonevents",
+      "summary": "Create a common event",
+      "description": ""
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/admin/commonevents/{event_no}",
+      "summary": "Update a common event",
+      "description": ""
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/v2/admin/commonevents/{event_no}",
+      "summary": "Delete a common event",
+      "description": ""
+    }
+  ]
+}

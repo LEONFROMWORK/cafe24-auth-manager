@@ -1,0 +1,25 @@
+{
+  "category": "reports",
+  "api_type": "admin",
+  "endpoint_count": 3,
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/reports/hourlysales",
+      "summary": "Reports hourlysales",
+      "description": "시간대별 정산통계(Reports hourlysales)는 특정 날짜와 시간을 기준으로 각종 매출에 관한 데이터를 조회할 수 있습니다."
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/reports/productsales",
+      "summary": "Reports productsales",
+      "description": "상품판매통계(Reports productsales)를 활용하여 상품을 기준으로 판매된 통계를 조회할 수 있습니다."
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/reports/salesvolume",
+      "summary": "Reports salesvolume",
+      "description": "판매수량 통계(Reports salesvolume)는 쇼핑몰의 상품이 판매된 수량의 통계에 대한 기능입니다."
+    }
+  ]
+}

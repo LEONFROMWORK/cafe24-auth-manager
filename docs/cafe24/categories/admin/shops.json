@@ -1,0 +1,19 @@
+{
+  "category": "shops",
+  "api_type": "admin",
+  "endpoint_count": 2,
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/shops",
+      "summary": "Retrieve shops",
+      "description": "멀티쇼핑몰(Shops)은 한개의 판매아이디에서 두개 이상의 쇼핑몰을 운영하고 있는 경우 생성한 멀티 쇼핑몰의 정보입니다. 멀티쇼핑몰은 최대 15개까지 생성이 가능하며, 각각 다른 언어와 화폐로 생성할 수 있어 다국어 쇼핑몰을 운영하기 용이합니다."
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/shops/{shop_no}",
+      "summary": "Retrieve specific shop",
+      "description": "멀티쇼핑몰(Shops)은 한개의 판매아이디에서 두개 이상의 쇼핑몰을 운영하고 있는 경우 생성한 멀티 쇼핑몰의 정보입니다. 멀티쇼핑몰은 최대 15개까지 생성이 가능하며, 각각 다른 언어와 화폐로 생성할 수 있어 다국어 쇼핑몰을 운영하기 용이합니다."
+    }
+  ]
+}

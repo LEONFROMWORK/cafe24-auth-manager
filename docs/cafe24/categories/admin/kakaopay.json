@@ -1,0 +1,19 @@
+{
+  "category": "kakaopay",
+  "api_type": "admin",
+  "endpoint_count": 2,
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/kakaopay/setting",
+      "summary": "Kakaopay setting",
+      "description": "쇼핑몰의 카카오페이 설정을 조회하거나 수정할 수 있습니다."
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/admin/kakaopay/setting",
+      "summary": "Kakaopay setting",
+      "description": "쇼핑몰의 카카오페이 설정을 조회하거나 수정할 수 있습니다."
+    }
+  ]
+}

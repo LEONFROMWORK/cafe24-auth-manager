@@ -1,0 +1,19 @@
+{
+  "category": "store",
+  "api_type": "admin",
+  "endpoint_count": 2,
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/store",
+      "summary": "Store",
+      "description": "상점(Store)은 쇼핑몰의 쇼핑몰명, 관리자 정보, 사업자 등록번호와 고객센터 전화번호 등 쇼핑몰의 기본적인 정보를 확인할 수 있는 기능입니다"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/store/accounts",
+      "summary": "Store accounts",
+      "description": "상점 계좌(Store accounts)는 쇼핑몰의 무통장입금 정보에 대한 기능입니다."
+    }
+  ]
+}

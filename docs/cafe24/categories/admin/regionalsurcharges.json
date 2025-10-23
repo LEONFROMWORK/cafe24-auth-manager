@@ -1,0 +1,19 @@
+{
+  "category": "regionalsurcharges",
+  "api_type": "admin",
+  "endpoint_count": 2,
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/regionalsurcharges",
+      "summary": "Regional surcharges 조회",
+      "description": "지역별 배송비를 설정하거나, 설정된 정보를 조회할 수 있습니다."
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/admin/regionalsurcharges",
+      "summary": "Regional surcharges 업데이트",
+      "description": "지역별 배송비를 설정하거나, 설정된 정보를 조회할 수 있습니다."
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "category": "serialcoupons",
+  "api_type": "admin",
+  "endpoint_count": 5,
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/serialcoupons",
+      "summary": "Retrieve a list of serial coupons",
+      "description": "시리얼코드로 쿠폰을 관리하는 기능을 제공합니다"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/admin/serialcoupons",
+      "summary": "Create a serial coupon"
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/v2/admin/serialcoupons/{coupon_no}",
+      "summary": "Delete a serial coupon"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/serialcoupons/{coupon_no}/issues",
+      "summary": "Retrieve serial coupon issues",
+      "description": "시리얼코드로 발급한 쿠폰을 관리하는 기능을 제공합니다"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/admin/serialcoupons/{coupon_no}/issues",
+      "summary": "Create a serial coupon issue"
+    }
+  ]
+}

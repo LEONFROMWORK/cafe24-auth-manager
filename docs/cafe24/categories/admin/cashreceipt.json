@@ -1,0 +1,31 @@
+{
+  "category": "cashreceipt",
+  "api_type": "admin",
+  "endpoint_count": 4,
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/cashreceipt",
+      "summary": "Cashreceipt 조회",
+      "description": "현금영수증 리스트를 조회합니다."
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/admin/cashreceipt",
+      "summary": "Cashreceipt 생성",
+      "description": "현금영수증을 발급합니다."
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/admin/cashreceipt/{cashreceipt_no}",
+      "summary": "Cashreceipt 수정",
+      "description": "발급된 현금영수증을 수정합니다."
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/admin/cashreceipt/{cashreceipt_no}/cancellation",
+      "summary": "Cashreceipt 취소",
+      "description": "발행된 현금영수증에 대해 신청취소를 합니다."
+    }
+  ]
+}

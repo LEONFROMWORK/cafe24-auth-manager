@@ -1,0 +1,19 @@
+{
+  "category": "labels",
+  "api_type": "admin",
+  "endpoint_count": 2,
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/labels",
+      "summary": "라벨 조회",
+      "description": "각각의 주문을 쉽게 식별하고 구분할 수 있도록 도와주는 기능입니다."
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/admin/labels",
+      "summary": "라벨 생성",
+      "description": "각각의 주문을 쉽게 식별하고 구분할 수 있도록 도와주는 기능입니다."
+    }
+  ]
+}

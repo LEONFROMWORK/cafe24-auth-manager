@@ -1,0 +1,31 @@
+{
+  "category": "appstore",
+  "api_type": "admin",
+  "endpoint_count": 4,
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/appstore/orders/{order_id}",
+      "summary": "앱스토어 주문 조회",
+      "description": "앱스토어 주문 상세 정보를 조회합니다."
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/admin/appstore/orders",
+      "summary": "앱스토어 주문 생성",
+      "description": "앱스토어 주문을 생성합니다."
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/appstore/payments",
+      "summary": "앱스토어 결제 조회",
+      "description": "앱스토어 결제 정보를 조회합니다."
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/appstore/payments/count",
+      "summary": "앱스토어 결제 건수 조회",
+      "description": "앱스토어 결제 건수를 조회합니다."
+    }
+  ]
+}

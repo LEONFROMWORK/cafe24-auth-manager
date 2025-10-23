@@ -1,0 +1,21 @@
+{
+  "category": "personal",
+  "api_type": "front",
+  "endpoint_count": 2,
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/api/v2/mains/{display_group}/products",
+      "summary": "메인 상품 조회",
+      "description": "메인 상품 목록을 조회합니다",
+      "parameters": [],
+      "responses": {}
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/carts",
+      "summary": "Carts",
+      "description": "장바구니(Carts)는 상품을 주문하기 전 한 번에 주문할 수 있도록 상품을 미리 담아두는 기능입니다."
+    }
+  ]
+}

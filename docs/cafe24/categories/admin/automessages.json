@@ -1,0 +1,29 @@
+{
+  "category": "automessages",
+  "api_type": "admin",
+  "endpoint_count": 3,
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/automessages/arguments",
+      "summary": "Automessages arguments 조회",
+      "description": "자동메시지 변수(Automessages arguments)는 자동메시지 발신 시 사용할 수 있는 변수를 확인하는 리소스입니다."
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/automessages/setting",
+      "summary": "Automessages setting 조회",
+      "description": "자동메시지 설정 조회",
+      "parameters": [],
+      "responses": {}
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/admin/automessages/setting",
+      "summary": "Automessages setting 수정",
+      "description": "자동메시지 설정 수정",
+      "parameters": [],
+      "responses": {}
+    }
+  ]
+}

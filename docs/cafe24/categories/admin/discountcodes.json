@@ -1,0 +1,33 @@
+{
+  "category": "discountcodes",
+  "api_type": "admin",
+  "endpoint_count": 5,
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/discountcodes",
+      "summary": "Retrieve a list of discount codes",
+      "description": "할인코드를 관리하는 기능을 제공합니다"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/discountcodes/{discount_code_no}",
+      "summary": "Retrieve a discount code"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/admin/discountcodes",
+      "summary": "Create a discount code"
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/admin/discountcodes/{discount_code_no}",
+      "summary": "Update a discount code"
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/v2/admin/discountcodes/{discount_code_no}",
+      "summary": "Delete a discount code"
+    }
+  ]
+}

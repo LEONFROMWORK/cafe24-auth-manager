@@ -1,0 +1,19 @@
+{
+  "category": "policy",
+  "api_type": "admin",
+  "endpoint_count": 2,
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/policy",
+      "summary": "Policy 조회",
+      "description": "쇼핑몰 이용약관 및 개인정보처리방침 약관의 정보를 관리합니다"
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/admin/policy",
+      "summary": "Policy 수정",
+      "description": "쇼핑몰 이용약관 및 개인정보처리방침 약관의 정보를 관리합니다"
+    }
+  ]
+}

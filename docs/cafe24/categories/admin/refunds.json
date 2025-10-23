@@ -1,0 +1,19 @@
+{
+  "category": "refunds",
+  "api_type": "admin",
+  "endpoint_count": 2,
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/refunds",
+      "summary": "Refunds",
+      "description": "환불(Refunds)은 주문의 상태가 환불과 관련된 상태에 대해 조회할 수 있는 기능입니다."
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/refunds/{refund_code}",
+      "summary": "Refunds by Code",
+      "description": "환불코드, 환불뿐만 단건이 아닌 주문에 대해서는 조회할 수 없으므로 주문상태를 잘 확인하고 사용해주세요."
+    }
+  ]
+}

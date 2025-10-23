@@ -1,0 +1,24 @@
+{
+  "category": "carts",
+  "api_type": "admin",
+  "endpoint_count": 3,
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/carts/setting",
+      "summary": "Retrieve cart settings",
+      "description": "장바구니 설정을 조회합니다."
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/admin/carts/setting",
+      "summary": "Update cart settings",
+      "description": "장바구니 설정을 업데이트합니다."
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/carts",
+      "summary": "Carts"
+    }
+  ]
+}

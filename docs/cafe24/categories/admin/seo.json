@@ -1,0 +1,19 @@
+{
+  "category": "seo",
+  "api_type": "admin",
+  "endpoint_count": 2,
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/seo/setting",
+      "summary": "Retrieve SEO settings",
+      "description": "SEO 설정(Seo setting)은 검색결과 상위에 쇼핑몰이 노출되고 방문자가 증가하도록 하는 검색엔진 최적화(SEO) 작업입니다."
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/admin/seo/setting",
+      "summary": "Update store SEO settings",
+      "description": "SEO 설정(Seo setting)은 검색결과 상위에 쇼핑몰이 노출되고 방문자가 증가하도록 하는 검색엔진 최적화(SEO) 작업입니다."
+    }
+  ]
+}

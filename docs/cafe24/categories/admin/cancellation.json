@@ -1,0 +1,25 @@
+{
+  "category": "cancellation",
+  "api_type": "admin",
+  "endpoint_count": 3,
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/cancellation/{claim_code}",
+      "summary": "Cancellation",
+      "description": "취소(Cancellation)는 특정 주문을 배송 전에 취소하는 기능입니다."
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/admin/cancellation",
+      "summary": "Cancellation",
+      "description": "취소(Cancellation)는 특정 주문을 배송 전에 취소하는 기능입니다."
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/admin/cancellation",
+      "summary": "Cancellation",
+      "description": "취소(Cancellation)는 특정 주문을 배송 전에 취소하는 기능입니다."
+    }
+  ]
+}

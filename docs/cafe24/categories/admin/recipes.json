@@ -1,0 +1,25 @@
+{
+  "category": "recipes",
+  "api_type": "admin",
+  "endpoint_count": 3,
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/recipes",
+      "summary": "Recipes",
+      "description": "쇼핑몰에 레시피를 등록하거나, 등록된 레시피를 목록으로 조회하거나, 삭제할 수 있습니다."
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/admin/recipes",
+      "summary": "Recipes",
+      "description": "쇼핑몰에 레시피를 등록하거나, 등록된 레시피를 목록으로 조회하거나, 삭제할 수 있습니다."
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/v2/admin/recipes/{recipe_code}",
+      "summary": "Recipes",
+      "description": "쇼핑몰에 레시피를 등록하거나, 등록된 레시피를 목록으로 조회하거나, 삭제할 수 있습니다."
+    }
+  ]
+}

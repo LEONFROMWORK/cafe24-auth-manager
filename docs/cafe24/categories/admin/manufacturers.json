@@ -1,0 +1,37 @@
+{
+  "category": "manufacturers",
+  "api_type": "admin",
+  "endpoint_count": 5,
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/manufacturers",
+      "summary": "Retrieve a list of manufacturers",
+      "description": "제조사 목록을 조회합니다."
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/manufacturers/{manufacturer_code}",
+      "summary": "Retrieve a manufacturer",
+      "description": "특정 제조사를 조회합니다."
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/manufacturers/count",
+      "summary": "Retrieve a count of manufacturers",
+      "description": "제조사 수를 조회합니다."
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/admin/manufacturers",
+      "summary": "Create a manufacturer",
+      "description": "새로운 제조사를 생성합니다."
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/admin/manufacturers/{manufacturer_code}",
+      "summary": "Update a manufacturer",
+      "description": "기존 제조사를 수정합니다."
+    }
+  ]
+}

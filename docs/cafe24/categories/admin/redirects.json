@@ -1,0 +1,28 @@
+{
+  "category": "redirects",
+  "api_type": "admin",
+  "endpoint_count": 4,
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/redirects",
+      "summary": "Redirects 조회",
+      "description": "특정 URL로 접속 했을때, 설정한 URL로 리다이렉트할 수 있는 리소스입니다."
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/admin/redirects",
+      "summary": "Redirects 생성"
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/admin/redirects/{id}",
+      "summary": "Redirects 수정"
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/v2/admin/redirects/{id}",
+      "summary": "Redirects 삭제"
+    }
+  ]
+}

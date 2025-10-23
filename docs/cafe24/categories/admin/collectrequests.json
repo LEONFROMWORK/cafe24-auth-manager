@@ -1,0 +1,13 @@
+{
+  "category": "collectrequests",
+  "api_type": "admin",
+  "endpoint_count": 1,
+  "endpoints": [
+    {
+      "method": "PUT",
+      "path": "/api/v2/admin/collectrequests/{request_no}",
+      "summary": "Collectrequests 수정",
+      "description": "수거신청 정보를 수정합니다."
+    }
+  ]
+}

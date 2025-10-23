@@ -1,0 +1,37 @@
+{
+  "category": "shippingorigins",
+  "api_type": "admin",
+  "endpoint_count": 5,
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/shippingorigins",
+      "summary": "Shipping origins 조회",
+      "description": "출고지에 대한 정보를 관리하는 기능입니다."
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/shippingorigins/{origin_code}",
+      "summary": "Shipping origin 조회",
+      "description": "출고지에 대한 정보를 관리하는 기능입니다."
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/admin/shippingorigins",
+      "summary": "Shipping origin 생성",
+      "description": "출고지에 대한 정보를 관리하는 기능입니다."
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/admin/shippingorigins/{origin_code}",
+      "summary": "Shipping origin 업데이트",
+      "description": "출고지에 대한 정보를 관리하는 기능입니다."
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/v2/admin/shippingorigins/{origin_code}",
+      "summary": "Shipping origin 삭제",
+      "description": "출고지에 대한 정보를 관리하는 기능입니다."
+    }
+  ]
+}

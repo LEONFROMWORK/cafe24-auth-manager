@@ -1,0 +1,13 @@
+{
+  "category": "dashboard",
+  "api_type": "admin",
+  "endpoint_count": 1,
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/dashboard",
+      "summary": "Dashboard",
+      "description": "대시보드(Dashboard)는 쇼핑몰의 주문 현황과 매출 현황 등 쇼핑몰 운영에 필요한 정보를 간략하게 요약해주는 정보입니다."
+    }
+  ]
+}

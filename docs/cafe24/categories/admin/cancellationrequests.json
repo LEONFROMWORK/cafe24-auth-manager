@@ -1,0 +1,19 @@
+{
+  "category": "cancellationrequests",
+  "api_type": "admin",
+  "endpoint_count": 2,
+  "endpoints": [
+    {
+      "method": "POST",
+      "path": "/api/v2/admin/cancellationrequests",
+      "summary": "Cancellationrequests",
+      "description": "취소요청(Cancellationrequests)은 주문에 대한 취소요청에 관한 기능입니다."
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/admin/cancellationrequests",
+      "summary": "Cancellationrequests",
+      "description": "취소요청(Cancellationrequests)은 주문에 대한 취소요청에 관한 기능입니다."
+    }
+  ]
+}

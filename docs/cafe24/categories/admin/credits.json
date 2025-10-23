@@ -1,0 +1,19 @@
+{
+  "category": "credits",
+  "api_type": "admin",
+  "endpoint_count": 2,
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/credits",
+      "summary": "Retrieve credits information",
+      "description": "예치금(Credits)은 주문 환불시 환불수단으로서 받을 수 있는 현금성 자산입니다."
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/credits/report",
+      "summary": "Credits report",
+      "description": "예치금 통계(Credit report)는 지정한 기간동안의 예치금 통계를 조회할 수 있는 리소스입니다."
+    }
+  ]
+}

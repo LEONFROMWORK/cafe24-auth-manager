@@ -1,0 +1,25 @@
+{
+  "category": "naverpay",
+  "api_type": "admin",
+  "endpoint_count": 3,
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/naverpay/setting",
+      "summary": "Naverpay setting 조회",
+      "description": "네이버페이 공통인증키를 조회할 수 있는 기능입니다."
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/admin/naverpay/setting",
+      "summary": "Naverpay setting 생성",
+      "description": "네이버페이 공통인증키를 생성할 수 있는 기능입니다."
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/admin/naverpay/setting",
+      "summary": "Naverpay setting 수정",
+      "description": "네이버페이 공통인증키를 수정할 수 있는 기능입니다."
+    }
+  ]
+}

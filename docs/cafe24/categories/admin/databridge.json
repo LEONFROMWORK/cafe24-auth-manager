@@ -1,0 +1,13 @@
+{
+  "category": "databridge",
+  "api_type": "admin",
+  "endpoint_count": 1,
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/api/v2/admin/databridge/logs",
+      "summary": "Databridge logs",
+      "description": "쇼핑몰의 전환추적 이벤트 웹훅 정보를 제공합니다."
+    }
+  ]
+}
