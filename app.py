@@ -104,11 +104,17 @@ def start_auth():
         return jsonify({'success': False, 'message': '설정을 먼저 입력해주세요.'})
 
     # OAuth 파라미터
+    # Redirect URI: 설정에서 가져오거나 현재 호스트 기반으로 자동 생성
+    redirect_uri = config.get('redirect_uri')
+    if not redirect_uri:
+        # 자동으로 현재 호스트 기반 redirect_uri 생성
+        redirect_uri = request.host_url.rstrip('/') + '/api/auth/callback'
+
     params = {
         'response_type': 'code',
         'client_id': config['client_id'],
         'state': 'app_install',
-        'redirect_uri': f"http://localhost:5001/api/auth/callback",
+        'redirect_uri': redirect_uri,
         'scope': ','.join([
             'mall.read_application',
             'mall.write_application',
@@ -155,12 +161,17 @@ def auth_callback():
 
     token_url = f"https://{config['shop_id']}.cafe24api.com/api/v2/oauth/token"
 
+    # Redirect URI: 설정에서 가져오거나 현재 호스트 기반으로 자동 생성
+    redirect_uri = config.get('redirect_uri')
+    if not redirect_uri:
+        redirect_uri = request.host_url.rstrip('/') + '/api/auth/callback'
+
     data = {
         'grant_type': 'authorization_code',
         'client_id': config['client_id'],
         'client_secret': config['client_secret'],
         'code': code,
-        'redirect_uri': 'http://localhost:5001/api/auth/callback'
+        'redirect_uri': redirect_uri
     }
 
     try:
