@@ -41,34 +41,29 @@ async function loadAccounts() {
             accountCard.className = `account-card ${isActive ? 'active' : ''}`;
             accountCard.onclick = () => switchAccount(shopId);
 
-            let tokenBadge = '';
-            let tokenInfo = '';
-
-            if (tokenStatus.has_token) {
-                const badgeClass = tokenStatus.is_expired ? 'expired' : 'active';
-                const badgeText = tokenStatus.is_expired ? '만료됨' : '활성';
-
-                tokenBadge = `<span class="account-token-badge ${badgeClass}">${badgeText}</span>`;
-                tokenInfo = `
-                    <div class="account-token-info">
-                        ${tokenStatus.is_expired ? '재인증 필요' : `남은 시간: ${tokenStatus.time_remaining_formatted}`}
-                    </div>
-                `;
-            } else {
-                tokenBadge = '<span class="account-token-badge none">토큰 없음</span>';
+            // 토큰 만료 시간 계산
+            let expiryText = '토큰 없음';
+            if (tokenStatus.has_token && tokenStatus.expires_at) {
+                const expiryDate = new Date(tokenStatus.expires_at * 1000);
+                expiryText = expiryDate.toLocaleString('ko-KR', {
+                    year: 'numeric',
+                    month: '2-digit',
+                    day: '2-digit',
+                    hour: '2-digit',
+                    minute: '2-digit'
+                });
             }
 
             accountCard.innerHTML = `
-                <div class="account-header">
-                    <div class="account-shop-id">
+                <div class="account-simple">
+                    <div class="account-main">
                         <span class="shop-id-text" id="shop-id-${shopId}" onclick="event.stopPropagation(); toggleShopIdVisibility('${shopId}')">${shopId}</span>
-                        <button class="toggle-visibility" onclick="event.stopPropagation(); toggleShopIdVisibility('${shopId}')">👁️</button>
+                        <span class="expiry-time">${expiryText}</span>
                     </div>
-                    <button class="account-delete" onclick="event.stopPropagation(); deleteAccount('${shopId}')">삭제</button>
-                </div>
-                <div class="account-token-status">
-                    ${tokenBadge}
-                    ${tokenInfo}
+                    <div class="account-actions">
+                        <button class="toggle-visibility" onclick="event.stopPropagation(); toggleShopIdVisibility('${shopId}')">👁️</button>
+                        <button class="account-delete" onclick="event.stopPropagation(); deleteAccount('${shopId}')">삭제</button>
+                    </div>
                 </div>
             `;
 
