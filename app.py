@@ -290,6 +290,12 @@ def token_status():
         })
 
     expires_at = token.get('expires_at', 0)
+    # expires_at이 문자열일 수 있으므로 int로 변환
+    try:
+        expires_at = int(expires_at)
+    except (ValueError, TypeError):
+        expires_at = 0
+
     current_time = int(time.time())
     is_expired = current_time >= expires_at
     time_remaining = expires_at - current_time if not is_expired else 0
