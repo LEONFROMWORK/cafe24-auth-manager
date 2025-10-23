@@ -331,7 +331,18 @@ def test_api():
     }
 
     try:
+        # 디버깅: 요청 정보 로깅
+        print(f"API Test Request:")
+        print(f"  URL: {url}")
+        print(f"  Headers: {headers}")
+
         response = requests.get(url, headers=headers)
+
+        # 디버깅: 응답 정보 로깅
+        print(f"  Response Status: {response.status_code}")
+        if response.status_code != 200:
+            print(f"  Response Body: {response.text}")
+
         response.raise_for_status()
 
         return jsonify({
@@ -341,9 +352,16 @@ def test_api():
         })
 
     except Exception as e:
+        error_detail = str(e)
+        if hasattr(e, 'response') and e.response is not None:
+            try:
+                error_detail = f"{str(e)} - Response: {e.response.text}"
+            except:
+                pass
+
         return jsonify({
             'success': False,
-            'message': f'API 호출 실패: {str(e)}',
+            'message': f'API 호출 실패: {error_detail}',
             'status_code': getattr(e.response, 'status_code', None) if hasattr(e, 'response') else None
         })
 
