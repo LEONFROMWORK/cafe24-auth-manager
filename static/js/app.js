@@ -1,5 +1,6 @@
 // 페이지 로드 시 초기화
 document.addEventListener('DOMContentLoaded', function() {
+    loadAccounts();
     loadConfig();
     loadTokenStatus();
 
@@ -8,7 +9,154 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // 토큰 상태를 주기적으로 업데이트 (30초마다)
     setInterval(loadTokenStatus, 30000);
+    setInterval(loadAccounts, 30000);  // 계정 목록도 30초마다 업데이트
 });
+
+// 계정 목록 로드
+async function loadAccounts() {
+    try {
+        const response = await fetch('/api/accounts');
+        const data = await response.json();
+
+        const accountsList = document.getElementById('accounts-list');
+
+        if (!data.accounts || Object.keys(data.accounts).length === 0) {
+            accountsList.innerHTML = `
+                <div class="no-accounts">
+                    <p>등록된 계정이 없습니다.</p>
+                    <p>아래 "앱 정보 설정"에서 첫 계정을 등록하세요.</p>
+                </div>
+            `;
+            return;
+        }
+
+        const accountsContainer = document.createElement('div');
+        accountsContainer.className = 'accounts-container';
+
+        for (const [shopId, account] of Object.entries(data.accounts)) {
+            const isActive = shopId === data.current_account;
+            const tokenStatus = account.token_status || { has_token: false };
+
+            const accountCard = document.createElement('div');
+            accountCard.className = `account-card ${isActive ? 'active' : ''}`;
+            accountCard.onclick = () => switchAccount(shopId);
+
+            let tokenBadge = '';
+            let tokenInfo = '';
+
+            if (tokenStatus.has_token) {
+                const badgeClass = tokenStatus.is_expired ? 'expired' : 'active';
+                const badgeText = tokenStatus.is_expired ? '만료됨' : '활성';
+
+                tokenBadge = `<span class="account-token-badge ${badgeClass}">${badgeText}</span>`;
+                tokenInfo = `
+                    <div class="account-token-info">
+                        ${tokenStatus.is_expired ? '재인증 필요' : `남은 시간: ${tokenStatus.time_remaining_formatted}`}
+                    </div>
+                `;
+            } else {
+                tokenBadge = '<span class="account-token-badge none">토큰 없음</span>';
+            }
+
+            accountCard.innerHTML = `
+                <div class="account-header">
+                    <div class="account-shop-id">
+                        <span class="shop-id-text" id="shop-id-${shopId}" onclick="event.stopPropagation(); toggleShopIdVisibility('${shopId}')">${shopId}</span>
+                        <button class="toggle-visibility" onclick="event.stopPropagation(); toggleShopIdVisibility('${shopId}')">👁️</button>
+                    </div>
+                    <button class="account-delete" onclick="event.stopPropagation(); deleteAccount('${shopId}')">삭제</button>
+                </div>
+                <div class="account-token-status">
+                    ${tokenBadge}
+                    ${tokenInfo}
+                </div>
+            `;
+
+            accountsContainer.appendChild(accountCard);
+        }
+
+        accountsList.innerHTML = '';
+        accountsList.appendChild(accountsContainer);
+
+    } catch (error) {
+        console.error('계정 목록 로드 실패:', error);
+        document.getElementById('accounts-list').innerHTML = `
+            <div class="no-accounts">
+                <p>계정 목록을 불러올 수 없습니다.</p>
+            </div>
+        `;
+    }
+}
+
+// Shop ID 표시/숨김 토글
+function toggleShopIdVisibility(shopId) {
+    const element = document.getElementById(`shop-id-${shopId}`);
+    element.classList.toggle('visible');
+}
+
+// 계정 전환
+async function switchAccount(shopId) {
+    try {
+        const response = await fetch('/api/accounts/switch', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ shop_id: shopId })
+        });
+
+        const result = await response.json();
+
+        if (result.success) {
+            // 계정 목록 새로고침
+            await loadAccounts();
+            // 현재 계정 설정 로드
+            await loadConfig();
+            // 토큰 상태 업데이트
+            await loadTokenStatus();
+
+            showMessage('config-message', result.message, 'success');
+        } else {
+            showMessage('config-message', result.message, 'error');
+        }
+    } catch (error) {
+        showMessage('config-message', '계정 전환 실패: ' + error.message, 'error');
+    }
+}
+
+// 계정 삭제
+async function deleteAccount(shopId) {
+    if (!confirm(`${shopId} 계정을 정말 삭제하시겠습니까?`)) {
+        return;
+    }
+
+    try {
+        const response = await fetch('/api/accounts/delete', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ shop_id: shopId })
+        });
+
+        const result = await response.json();
+
+        if (result.success) {
+            // 계정 목록 새로고침
+            await loadAccounts();
+            // 현재 계정 설정 로드
+            await loadConfig();
+            // 토큰 상태 업데이트
+            await loadTokenStatus();
+
+            showMessage('config-message', result.message, 'success');
+        } else {
+            showMessage('config-message', result.message, 'error');
+        }
+    } catch (error) {
+        showMessage('config-message', '계정 삭제 실패: ' + error.message, 'error');
+    }
+}
 
 // 설정 로드
 async function loadConfig() {
@@ -59,6 +207,8 @@ async function saveConfig(e) {
         showMessage('config-message', result.message, result.success ? 'success' : 'error');
 
         if (result.success) {
+            // 계정 목록 새로고침
+            loadAccounts();
             // 단계 2 활성화
             activateStep('step-auth');
         }
