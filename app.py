@@ -174,14 +174,22 @@ def auth_callback():
 
     data = {
         'grant_type': 'authorization_code',
-        'client_id': config['client_id'],
-        'client_secret': config['client_secret'],
         'code': code,
         'redirect_uri': redirect_uri
     }
 
+    # Authorization 헤더: Basic Auth (client_id:client_secret를 Base64 인코딩)
+    import base64
+    credentials = f"{config['client_id']}:{config['client_secret']}"
+    encoded_credentials = base64.b64encode(credentials.encode()).decode()
+
+    headers = {
+        'Authorization': f'Basic {encoded_credentials}',
+        'Content-Type': 'application/x-www-form-urlencoded'
+    }
+
     try:
-        response = requests.post(token_url, data=data)
+        response = requests.post(token_url, data=data, headers=headers)
         response.raise_for_status()
 
         result = response.json()
@@ -225,13 +233,21 @@ def refresh_token():
 
     data = {
         'grant_type': 'refresh_token',
-        'client_id': config['client_id'],
-        'client_secret': config['client_secret'],
         'refresh_token': config['token']['refresh_token']
     }
 
+    # Authorization 헤더: Basic Auth (client_id:client_secret를 Base64 인코딩)
+    import base64
+    credentials = f"{config['client_id']}:{config['client_secret']}"
+    encoded_credentials = base64.b64encode(credentials.encode()).decode()
+
+    headers = {
+        'Authorization': f'Basic {encoded_credentials}',
+        'Content-Type': 'application/x-www-form-urlencoded'
+    }
+
     try:
-        response = requests.post(token_url, data=data)
+        response = requests.post(token_url, data=data, headers=headers)
         response.raise_for_status()
 
         result = response.json()
