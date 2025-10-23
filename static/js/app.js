@@ -32,12 +32,17 @@ async function loadConfig() {
 async function saveConfig(e) {
     e.preventDefault();
 
+    // 선택된 scopes 수집
+    const scopeCheckboxes = document.querySelectorAll('input[name="scope"]:checked');
+    const scopes = Array.from(scopeCheckboxes).map(cb => cb.value);
+
     const config = {
         app_url: document.getElementById('app_url').value,
         redirect_uri: document.getElementById('redirect_uri').value,
         client_id: document.getElementById('client_id').value,
         client_secret: document.getElementById('client_secret').value,
-        service_key: document.getElementById('service_key').value
+        service_key: document.getElementById('service_key').value,
+        scopes: scopes
     };
 
     try {

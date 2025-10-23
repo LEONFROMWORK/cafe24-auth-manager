@@ -110,22 +110,28 @@ def start_auth():
         # 자동으로 현재 호스트 기반 redirect_uri 생성
         redirect_uri = request.host_url.rstrip('/') + '/api/auth/callback'
 
-    params = {
-        'response_type': 'code',
-        'client_id': config['client_id'],
-        'state': 'app_install',
-        'redirect_uri': redirect_uri,
-        'scope': ','.join([
+    # Scopes: 사용자가 선택한 권한 사용
+    scopes = config.get('scopes', [])
+    if not scopes:
+        # 기본 scopes (앱, 상품분류, 상품 읽기/쓰기)
+        scopes = [
             'mall.read_application',
             'mall.write_application',
             'mall.read_category',
             'mall.write_category',
             'mall.read_product',
-            'mall.write_product',
-            'mall.read_order',
-            'mall.write_order',
-            'mall.read_customer'
-        ])
+            'mall.write_product'
+        ]
+
+    # scopes가 문자열이면 그대로, 리스트면 콤마로 연결
+    scope_string = ','.join(scopes) if isinstance(scopes, list) else scopes
+
+    params = {
+        'response_type': 'code',
+        'client_id': config['client_id'],
+        'state': 'app_install',
+        'redirect_uri': redirect_uri,
+        'scope': scope_string
     }
 
     # URL 생성
