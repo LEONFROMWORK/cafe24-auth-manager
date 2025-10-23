@@ -195,10 +195,15 @@ def auth_callback():
         result = response.json()
 
         # 토큰 저장
+        # expires_at 계산: expires_in이 있으면 사용, 없으면 기본 2시간
+        current_time = int(time.time())
+        expires_in = result.get('expires_in', 7200)  # 기본 2시간
+        expires_at = current_time + expires_in
+
         token_data = {
             'access_token': result['access_token'],
             'refresh_token': result.get('refresh_token', ''),
-            'expires_at': result.get('expires_at', int(time.time()) + 7200),
+            'expires_at': expires_at,
             'issued_at': datetime.now().isoformat()
         }
 
@@ -253,10 +258,15 @@ def refresh_token():
         result = response.json()
 
         # 새 토큰으로 업데이트
+        # expires_at 계산: expires_in이 있으면 사용, 없으면 기본 2시간
+        current_time = int(time.time())
+        expires_in = result.get('expires_in', 7200)
+        expires_at = current_time + expires_in
+
         token_data = {
             'access_token': result['access_token'],
             'refresh_token': result.get('refresh_token', config['token']['refresh_token']),
-            'expires_at': result.get('expires_at', int(time.time()) + 7200),
+            'expires_at': expires_at,
             'issued_at': datetime.now().isoformat()
         }
 
@@ -326,7 +336,7 @@ def test_api():
     headers = {
         'Authorization': f"Bearer {token['access_token']}",
         'Content-Type': 'application/json',
-        'X-Cafe24-Api-Version': '2024-03-01',
+        'X-Cafe24-Api-Version': '2025-09-01',
         'X-Cafe24-Client-Id': config['client_id']
     }
 
