@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인증 완료 - Cafe24 OAuth</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <style>
+        .callback-container {
+            max-width: 600px;
+            margin: 100px auto;
+            text-align: center;
+        }
+        .success-icon {
+            font-size: 80px;
+            margin-bottom: 20px;
+        }
+        .error-icon {
+            font-size: 80px;
+            margin-bottom: 20px;
+            color: #e74c3c;
+        }
+        .token-details {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+            text-align: left;
+        }
+        .token-details pre {
+            background: white;
+            padding: 15px;
+            border-radius: 4px;
+            overflow-x: auto;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="callback-container">
+        {% if success %}
+            <div class="success-icon">✅</div>
+            <h1>인증 완료!</h1>
+            <p class="message success">{{ message }}</p>
+
+            {% if token_data %}
+            <div class="token-details">
+                <h3>발급된 토큰 정보</h3>
+                <p><strong>Access Token:</strong></p>
+                <pre>{{ token_data.access_token[:50] }}...</pre>
+
+                <p><strong>Refresh Token:</strong></p>
+                <pre>{{ token_data.refresh_token[:50] }}...</pre>
+
+                <p><strong>발급 시간:</strong> {{ token_data.issued_at }}</p>
+            </div>
+            {% endif %}
+
+            <p style="margin-top: 30px;">
+                <button class="btn btn-primary" onclick="window.close()">이 창 닫기</button>
+                <button class="btn btn-secondary" onclick="window.opener.location.reload(); window.close();">
+                    메인 페이지로 돌아가기
+                </button>
+            </p>
+
+            <script>
+                // 3초 후 자동으로 메인 페이지 새로고침 및 창 닫기
+                setTimeout(function() {
+                    if (window.opener) {
+                        window.opener.location.reload();
+                    }
+                    window.close();
+                }, 3000);
+            </script>
+        {% else %}
+            <div class="error-icon">❌</div>
+            <h1>인증 실패</h1>
+            <p class="message error">{{ message }}</p>
+
+            <p style="margin-top: 30px;">
+                <button class="btn btn-primary" onclick="window.close()">이 창 닫기</button>
+                <button class="btn btn-secondary" onclick="window.opener.location.reload(); window.close();">
+                    다시 시도하기
+                </button>
+            </p>
+        {% endif %}
+    </div>
+</body>
+</html>
