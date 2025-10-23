@@ -164,7 +164,7 @@ async function testApi() {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({
-                endpoint: '/api/v2/admin/products?limit=5'
+                endpoint: '/api/v2/products?limit=5'
             })
         });
 
